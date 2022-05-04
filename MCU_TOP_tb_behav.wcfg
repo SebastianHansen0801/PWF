@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="MCU_TOP_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="MCU_TOP_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="910000001fs"></ZoomEndTime>
+      <Cursor1Time time="910000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="128"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wvobject type="logic" fp_name="/MCU_TOP_tb/CLK">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/MCU_TOP_tb/uut/slow_clk">
+      <obj_property name="ElementShortName">slow_clk</obj_property>
+      <obj_property name="ObjectShortName">slow_clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/MCU_TOP_tb/uut/DP/RF/U1/R1">
+      <obj_property name="ElementShortName">R1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">R1[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/MCU_TOP_tb/uut/DP/RF/U1/R2">
+      <obj_property name="ElementShortName">R2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">R2[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/MCU_TOP_tb/uut/DP/RF/U1/R3">
+      <obj_property name="ElementShortName">R3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">R3[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/MCU_TOP_tb/uut/RAM/Data_outM">
+      <obj_property name="ElementShortName">Data_outM[15:0]</obj_property>
+      <obj_property name="ObjectShortName">Data_outM[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/MCU_TOP_tb/LED">
+      <obj_property name="ElementShortName">LED[7:0]</obj_property>
+      <obj_property name="ObjectShortName">LED[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/MCU_TOP_tb/BTNC">
+      <obj_property name="ElementShortName">BTNC</obj_property>
+      <obj_property name="ObjectShortName">BTNC</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/MCU_TOP_tb/BTNR">
+      <obj_property name="ElementShortName">BTNR</obj_property>
+      <obj_property name="ObjectShortName">BTNR</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/MCU_TOP_tb/BTND">
+      <obj_property name="ElementShortName">BTND</obj_property>
+      <obj_property name="ObjectShortName">BTND</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/MCU_TOP_tb/BTNL">
+      <obj_property name="ElementShortName">BTNL</obj_property>
+      <obj_property name="ObjectShortName">BTNL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/MCU_TOP_tb/BTNU">
+      <obj_property name="ElementShortName">BTNU</obj_property>
+      <obj_property name="ObjectShortName">BTNU</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/MCU_TOP_tb/RESET">
+      <obj_property name="ElementShortName">RESET</obj_property>
+      <obj_property name="ObjectShortName">RESET</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/MCU_TOP_tb/SW">
+      <obj_property name="ElementShortName">SW[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SW[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/MCU_TOP_tb/Anode">
+      <obj_property name="ElementShortName">Anode[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Anode[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/MCU_TOP_tb/Segments">
+      <obj_property name="ElementShortName">Segments[6:0]</obj_property>
+      <obj_property name="ObjectShortName">Segments[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/MCU_TOP_tb/end_test">
+      <obj_property name="ElementShortName">end_test</obj_property>
+      <obj_property name="ObjectShortName">end_test</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/MCU_TOP_tb/clk_period">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+</wave_config>

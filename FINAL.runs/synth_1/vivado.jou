@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed May  4 19:30:13 2022
+# Process ID: 1440
+# Current directory: /zhome/5f/5/155462/MCU project/FINAL/FINAL.runs/synth_1
+# Command line: vivado -log MCU_TOP.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source MCU_TOP.tcl
+# Log file: /zhome/5f/5/155462/MCU project/FINAL/FINAL.runs/synth_1/MCU_TOP.vds
+# Journal file: /zhome/5f/5/155462/MCU project/FINAL/FINAL.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source MCU_TOP.tcl -notrace
