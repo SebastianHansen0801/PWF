@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1652529877">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="MCU_TOP.drc"/>
+  <File Type="BG-BGN" Name="MCU_TOP.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="MCU_TOP.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="MCU_TOP.ltx"/>
+  <File Type="BITSTR-MMI" Name="MCU_TOP.mmi"/>
+  <File Type="BITSTR-BMM" Name="MCU_TOP_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="MCU_TOP.nky"/>
+  <File Type="BITSTR-RBT" Name="MCU_TOP.rbt"/>
+  <File Type="BITSTR-MSK" Name="MCU_TOP.msk"/>
+  <File Type="BG-BIN" Name="MCU_TOP.bin"/>
+  <File Type="BG-BIT" Name="MCU_TOP.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="MCU_TOP_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="MCU_TOP_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="MCU_TOP_bus_skew_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="MCU_TOP.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="MCU_TOP_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="MCU_TOP_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="MCU_TOP_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="MCU_TOP_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="MCU_TOP_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="MCU_TOP_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="MCU_TOP_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="MCU_TOP_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="MCU_TOP_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="MCU_TOP_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="MCU_TOP_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="MCU_TOP_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="MCU_TOP_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="MCU_TOP_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="MCU_TOP_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="MCU_TOP_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="MCU_TOP_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="MCU_TOP_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="MCU_TOP_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="MCU_TOP_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="MCU_TOP_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="MCU_TOP_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="MCU_TOP_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="MCU_TOP_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="MCU_TOP_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="MCU_TOP_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="MCU_TOP_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="MCU_TOP_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="MCU_TOP_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="MCU_TOP_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="MCU_TOP_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="MCU_TOP_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="MCU_TOP_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="MCU_TOP_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="MCU_TOP_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="MCU_TOP_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="MCU_TOP_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="MCU_TOP_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="MCU_TOP_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="MCU_TOP_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="MCU_TOP_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="MCU_TOP_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="MCU_TOP_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="MCU_TOP.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="MCU_TOP_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="MCU_TOP_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="MCU_TOP_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="MCU_TOP_timing_summary_init.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="MCU_TOP_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="MCU_TOP_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="MCU_TOP_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="MCU_TOP.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/7segdriver.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/8bit_Register.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ALU.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/D_ff_arst.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Datapath.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DestinationDecoder.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/DivClk.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/F_sel.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FullAdder.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HalfAdder.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/InstructionDecoderController.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/InstructionRegister.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MUX16x8x1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MUX2x1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MUX2x1x16.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MUX2x1x8.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MUX3x1.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MicroprogramController.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/NegZero.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PortReg8x8.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ProgramCounter.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Ram256X16.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RegisterR16.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RegsiterFile.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SignExtender.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ZeroFiller.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/arith_circuit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/function_unit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/logic_unit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/shifter_8bit.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MCU_TOP.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="MCU_TOP"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/FINAL/Nexys_4_DDR_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/Nexys_4_DDR_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1652372567"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

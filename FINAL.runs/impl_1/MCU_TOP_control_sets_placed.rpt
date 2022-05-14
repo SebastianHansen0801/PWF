@@ -1,0 +1,105 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Sat May 14 14:08:26 2022
+| Host         : n-62-30-5 running 64-bit Scientific Linux release 7.7 (Nitrogen)
+| Command      : report_control_sets -verbose -file MCU_TOP_control_sets_placed.rpt
+| Design       : MCU_TOP
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    37 |
+| Unused register locations in slices containing registers |    32 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            3 |
+|      4 |            1 |
+|      6 |            1 |
+|      8 |            1 |
+|    16+ |           31 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              86 |           17 |
+| No           | No                    | Yes                    |             114 |           12 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              16 |            5 |
+| Yes          | No                    | Yes                    |             448 |           68 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+----------------------------+------------------------------------+------------------+----------------+
+|          Clock Signal         |        Enable Signal       |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
++-------------------------------+----------------------------+------------------------------------+------------------+----------------+
+|  MCP/U2/MB_reg_i_2_n_0        |                            |                                    |                1 |              2 |
+|  MCP/U2/MD_reg_i_2_n_0        |                            |                                    |                1 |              2 |
+|  MCP/U2/MM_reg_i_2_n_0        |                            |                                    |                1 |              2 |
+|  PRM/U1/CLK                   |                            | PRM/U1/AR[0]                       |                1 |              4 |
+|  Clk1_D_BUFG                  |                            | DP/RF/U1/U15/gen[6].U0/Q_int_reg_0 |                1 |              6 |
+|  MCP/U2/FS_reg[3]_i_2_n_0     |                            |                                    |                4 |              8 |
+|  Clk1_D_BUFG                  | MCP/U2/Load                | DP/RF/U1/U15/gen[6].U0/Q_int_reg_0 |                4 |             16 |
+|  Clk1_D_BUFG                  | MCP/U2/Q_int_reg_3         | DP/RF/U1/U15/gen[6].U0/Q_int_reg_0 |                1 |             16 |
+|  Clk1_D_BUFG                  | MCP/U2/counter_reg[0][0]   | DP/RF/U1/U15/gen[6].U0/Q_int_reg_0 |                4 |             16 |
+|  Clk1_D_BUFG                  | MCP/U2/Q_int_reg_19        | DP/RF/U1/U15/gen[6].U0/Q_int_reg_0 |                3 |             16 |
+|  Clk1_D_BUFG                  | MCP/U2/Q_int_reg_22        | DP/RF/U1/U15/gen[6].U0/Q_int_reg_0 |                6 |             16 |
+|  Clk1_D_BUFG                  | MCP/U2/Q_int_reg_23        | DP/RF/U1/U15/gen[6].U0/Q_int_reg_0 |                1 |             16 |
+|  Clk1_D_BUFG                  | MCP/U2/Q_int_reg_24        | DP/RF/U1/U15/gen[6].U0/Q_int_reg_0 |                2 |             16 |
+|  Clk1_D_BUFG                  | MCP/U2/Q_int_reg_25        | DP/RF/U1/U15/gen[6].U0/Q_int_reg_0 |                3 |             16 |
+|  Clk1_D_BUFG                  | MCP/U2/Q_int_reg_12        | DP/RF/U1/U15/gen[6].U0/Q_int_reg_0 |                4 |             16 |
+|  Clk1_D_BUFG                  | MCP/U2/Q_int_reg_13        | DP/RF/U1/U15/gen[6].U0/Q_int_reg_0 |                2 |             16 |
+|  Clk1_D_BUFG                  | MCP/U2/Q_int_reg_16        | DP/RF/U1/U15/gen[6].U0/Q_int_reg_0 |                1 |             16 |
+|  Clk1_D_BUFG                  | MCP/U2/Q_int_reg_17        | DP/RF/U1/U15/gen[6].U0/Q_int_reg_0 |                4 |             16 |
+|  Clk1_D_BUFG                  | MCP/U2/Q_int_reg_18        | DP/RF/U1/U15/gen[6].U0/Q_int_reg_0 |                1 |             16 |
+|  Clk1_D_BUFG                  | MCP/U2/Q_int_reg_14        | DP/RF/U1/U15/gen[6].U0/Q_int_reg_0 |                3 |             16 |
+|  Clk1_D_BUFG                  | MCP/U2/Q_int_reg_15        | DP/RF/U1/U15/gen[6].U0/Q_int_reg_0 |                3 |             16 |
+|  Clk1_D_BUFG                  | MCP/U2/Q_int_reg_21        | DP/RF/U1/U15/gen[6].U0/Q_int_reg_0 |                2 |             16 |
+|  Clk1_D_BUFG                  | MCP/U2/Q_int_reg_20        | DP/RF/U1/U15/gen[6].U0/Q_int_reg_0 |                2 |             16 |
+|  CLK_IBUF_BUFG                | PRM/__15/i__n_0            | PRM/U1/AR[0]                       |                2 |             16 |
+|  CLK_IBUF_BUFG                | PRM/__14/i__n_0            | PRM/U1/AR[0]                       |                1 |             16 |
+|  CLK_IBUF_BUFG                | PRM/__13/i__n_0            | PRM/U1/AR[0]                       |                1 |             16 |
+|  CLK_IBUF_BUFG                | PRM/MR4_0                  | PRM/U1/AR[0]                       |                1 |             16 |
+|  CLK_IBUF_BUFG                | PRM/MR3_n_0                | PRM/U1/AR[0]                       |                1 |             16 |
+|  CLK_IBUF_BUFG                | MCP/U2/Data_outR_reg[7][0] |                                    |                5 |             16 |
+|  CLK_IBUF_BUFG                | MCP/U0/MR1_reg[7][0]       | PRM/U1/AR[0]                       |                1 |             16 |
+|  CLK_IBUF_BUFG                | MCP/U0/MR0_reg[7]_0[0]     | PRM/U1/AR[0]                       |                2 |             16 |
+|  CLK_IBUF_BUFG                | MCP/U2/E[0]                | DP/RF/U1/U15/gen[6].U0/Q_int_reg_0 |                5 |             32 |
+|  CLK_IBUF_BUFG                | MCP/U0/MR2_reg[7]_0[0]     | PRM/U1/AR[0]                       |                8 |             32 |
+|  MCP/U2/opcode_reg[6]_i_2_n_0 |                            |                                    |                4 |             32 |
+|  MCP/U2/PS_reg[1]_i_2_n_0     |                            |                                    |                6 |             40 |
+|  CLK_IBUF_BUFG                |                            | PRM/U1/AR[0]                       |                6 |             52 |
+|  CLK_IBUF_BUFG                |                            | DP/RF/U1/U15/gen[6].U0/Q_int_reg_0 |                4 |             52 |
++-------------------------------+----------------------------+------------------------------------+------------------+----------------+
+
+

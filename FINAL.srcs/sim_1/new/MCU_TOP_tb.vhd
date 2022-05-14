@@ -54,23 +54,26 @@ begin
     BTNL <= '0';
     BTNR <= '0';
     BTNU <= '0';
-    RESET <= '1';
-    wait for clk_period*2;
+  
     RESET <= '0';
+    wait for clk_period*3;
+    RESET <= '1';
     wait for clk_period*20;
     
+    BTNC <= '1';
+    SW <= x"06";
+    wait for clk_period*2;
+    BTNC <= '0';
+    wait for clk_period*2;
+    
     BTNU <= '1';
-    SW <= x"02";
+    SW <= x"1a";
     wait for clk_period*2;
     BTNU <= '0';
     wait for clk_period*2;
-    BTND <= '1';
-    SW <= x"03";
-    wait for clk_period*2;
-    BTND <= '0';
-    wait for clk_period*2;
+
     
-    wait for clk_period*180;
+    wait for clk_period*300;
 
 
     -- Put test bench stimulus code here

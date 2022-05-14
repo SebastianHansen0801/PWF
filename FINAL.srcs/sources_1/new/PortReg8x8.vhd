@@ -46,7 +46,7 @@ Port (
     Data_outR : out std_logic_vector(15 downto 0);
     LED: out STD_LOGIC_VECTOR (7 downto 0);
     RESET : in STD_LOGIC;
-    Anode : out STD_LOGIC_VECTOR(3 downto 0);
+    Anode : out STD_LOGIC_VECTOR(7 downto 0);
     segments : out STD_LOGIC_VECTOR(6 downto 0)
 );
 
@@ -58,16 +58,25 @@ architecture Behavioral of PortReg8x8 is
         Port ( Rst, clk : in  std_logic;    
                Data :   in  std_logic_vector (15 downto 0); -- Binary data
                cat :    out std_logic_vector(6 downto 0);  -- Common cathodes
-               an :     out std_logic_vector(3 downto 0)); -- Common Anodes
+               an :     out std_logic_vector(7 downto 0)); -- Common Anodes
     end component;
 
+    component DivClk is
+        port ( Reset: in STD_LOGIC;   -- Global Reset
+               Clk: in STD_LOGIC;     -- Master Clock
+               TimeP: in integer;     -- Time periode of the divided clock
+               Clk1: out STD_LOGIC);  -- Divided clock1 (Freq_Clk1 = Freq_Clk / TimeP)
+   end component;
+    
     signal MR0, MR1, MR2, MR3, MR4, MR5, MR6, MR7: std_logic_vector(7 downto 0);
     signal input_buttons: std_logic_vector(4 downto 0);
     signal d_word_sig: std_logic_vector(15 downto 0);
+    signal disp_clk: std_logic;
     
 begin
 
-    U0: SevenSeg4 port map (Rst => RESET, clk => clk, Data => d_word_sig, cat => segments, an => anode);
+    U0: SevenSeg4 port map (Rst => RESET, clk => disp_clk, Data => d_word_sig, cat => segments, an => anode);
+    U1: DivClk port map (reset => reset, clk => clk, timep => 100e3, clk1 => disp_clk);
     
     input_buttons <= BTNR & BTNL & BTND & BTNU & BTNC;
     d_word_sig <= MR1 & MR0;
@@ -82,9 +91,14 @@ begin
        end if;
    end process;
 
-    write: process (clk) is
+    write: process (clk, RESET) is
     begin
-        if (clk'event and clk = '1' and MW = '1') then -- on rising edge       
+        if (RESET = '1') then
+        MR0 <= x"00";
+        MR1 <= x"00";
+        MR2 <= x"00";
+        
+        elsif (clk'event and clk = '1' and MW = '1') then -- on rising edge       
             case Address_in is
                 when "11111000" =>
                     MR0 <= Data_in;   
@@ -122,9 +136,15 @@ begin
         end if;
     end process;
     
-    write_from_switch: process (clk) is
+    write_from_switch: process (clk, RESET) is
     begin
-        if (clk'event and clk = '1') then
+        if (RESET = '1') then
+            MR3 <= x"00";
+            MR4 <= x"00";
+            MR5 <= x"00";
+            MR6 <= x"00";
+            MR7 <= x"00";
+        elsif (clk'event and clk = '1') then
             if input_buttons = "10000" then MR3 <= SW;
             elsif input_buttons = "01000" then MR4 <= SW;
             elsif input_buttons = "00100" then MR5 <= SW;

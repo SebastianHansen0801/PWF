@@ -1,0 +1,1 @@
+-wto "84294bbc72184cdcb64ebedfecb7862b" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "PortReg8x8_tb_behav" "xil_defaultlib.PortReg8x8_tb" -log "elaborate.log" 

@@ -76,7 +76,7 @@ begin
         R8 => R8_int, R9 => R9_int, R10 => R10_int, R11 => R11_int, R12 => R12_int, R13 => R13_int, R14 => R14_int, R15 => R15_int);
     U2: MUX16x1x8 port map (D_Select => AA, Y_Data => A_Data,
         R0 => R0_int, R1 => R1_int, R2 => R2_int, R3 => R3_int, R4 => R4_int, R5 => R5_int, R6 => R6_int, R7 => R7_int,
-        R8 => R9_int, R9 => R9_int, R10 => R10_int, R11 => R11_int, R12 => R12_int, R13 => R13_int, R14 => R14_int, R15 => R15_int);
+        R8 => R8_int, R9 => R9_int, R10 => R10_int, R11 => R11_int, R12 => R12_int, R13 => R13_int, R14 => R14_int, R15 => R15_int);
     U3: MUX16x1x8 port map (D_Select => BA, Y_Data => B_Data,
         R0 => R0_int, R1 => R1_int, R2 => R2_int, R3 => R3_int, R4 => R4_int, R5 => R5_int, R6 => R6_int, R7 => R7_int,
         R8 => R8_int, R9 => R9_int, R10 => R10_int, R11 => R11_int, R12 => R12_int, R13 => R13_int, R14 => R14_int, R15 => R15_int);

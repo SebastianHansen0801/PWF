@@ -36,7 +36,7 @@ entity MCU_TOP is
            LED : out STD_LOGIC_VECTOR (7 downto 0);
            BTNC, BTNR, BTND, BTNL, BTNU, RESET : in STD_LOGIC;
            SW : in STD_LOGIC_VECTOR (7 downto 0);
-           Anode : out STD_LOGIC_VECTOR (3 downto 0);
+           Anode : out STD_LOGIC_VECTOR (7 downto 0);
            Segments : out STD_LOGIC_VECTOR (6 downto 0));
 end MCU_TOP;
 
@@ -59,7 +59,7 @@ architecture Behavioral of MCU_TOP is
        
     component MicroprogramController is
         Port ( RESET : in STD_LOGIC;
-               CLK : in STD_LOGIC;
+               CLK,fclk : in STD_LOGIC;
                Address_In : in STD_LOGIC_VECTOR (7 downto 0);
                Address_Out : out STD_LOGIC_VECTOR (7 downto 0);
                Instruction_In : in STD_LOGIC_VECTOR (15 downto 0);
@@ -91,7 +91,7 @@ architecture Behavioral of MCU_TOP is
                Data_outR : out std_logic_vector(15 downto 0);
                LED: out STD_LOGIC_VECTOR (7 downto 0);
                RESET : in STD_LOGIC;
-               Anode : out STD_LOGIC_VECTOR(3 downto 0);
+               Anode : out STD_LOGIC_VECTOR(7 downto 0);
                segments : out STD_LOGIC_VECTOR(6 downto 0));
     end component;
     
@@ -124,25 +124,26 @@ architecture Behavioral of MCU_TOP is
     signal Data_Bus_sig, Data_in_RAM_sig, Data_OutM_sig, Data_OutR_sig: std_logic_vector(15 downto 0);
 
     signal slow_clk: std_logic;
+    signal rst_not: std_logic;
 
 begin
 
 
-    DP: Datapath port map ( RESET => RESET, CLK => slow_CLK, RW => RW_sig, DA => DA_sig, AA => AA_sig, BA => BA_sig,
+    DP: Datapath port map ( RESET => rst_not, CLK => slow_CLK, RW => RW_sig, DA => DA_sig, AA => AA_sig, BA => BA_sig,
                             Constant_In => Constant_sig, MB => MB_sig, FS0 => FS_sig(0), FS1 => FS_sig(1), FS2 => FS_sig(2), FS3 => FS_sig(3),
                             Data_In => Data_Bus_sig(7 downto 0), MD => MD_sig, Address_Out => Address_Out_DP_sig, Data_Out => Data_Out_sig, 
                             V => V_sig, C =>C_sig, N => N_sig, Z => Z_sig);
                    
-    MCP: MicroprogramController port  map ( RESET => RESET, CLK => slow_CLK, Address_In => Address_In_MCP_sig, Address_out => Address_Out_MCP_sig, 
+    MCP: MicroprogramController port  map ( fclk => clk, RESET => rst_not, CLK => slow_CLK, Address_In => Address_In_MCP_sig, Address_out => Address_Out_MCP_sig, 
                                             Instruction_In => data_Bus_sig, Constant_Out => Constant_sig, V => V_sig, C => C_sig, N => N_sig, Z => Z_sig, 
                                             DX => DA_sig, AX => AA_sig, BX => BA_sig, FS => FS_sig, 
                                             MB => MB_sig, MD => MD_sig, RW => RW_sig, MM => MM_sig, MW => MW_sig);
                                             
-    RAM: RAM256X16 port map ( RESET => RESET, CLK => CLK, Data_In => Data_In_RAM_sig, Address_In => Address_In_RAMPRM_sig, MW => MW_sig, Data_OutM => Data_OutM_sig);
+    RAM: RAM256X16 port map ( RESET => rst_not, CLK => CLK, Data_In => Data_In_RAM_sig, Address_In => Address_In_RAMPRM_sig, MW => MW_sig, Data_OutM => Data_OutM_sig);
     
-    PRM: PortReg8x8 port map ( RESET => RESET, CLK => CLK, MW => MW_sig, Data_In => Data_Out_sig, Address_In => Address_In_RAMPRM_sig, SW => SW, 
+    PRM: PortReg8x8 port map ( RESET => rst_not, CLK => CLK, MW => MW_sig, Data_In => Data_Out_sig, Address_In => Address_In_RAMPRM_sig, SW => SW, 
                                BTNC => BTNC, BTNU => BTNU, BTNL => BTNL, BTNR => BTNR, BTND => BTND, MMR => MMR_sig, Data_OutR => Data_OutR_sig, LED => LED,
-                               Anode => Anode, Segments => Segments);
+                               Anode => Anode, segments => Segments);
     
     MUXM: MUX2x1x8 port map ( I0 => Address_Out_DP_sig, I1 => Address_Out_MCP_sig, Jx => Address_In_RAMPRM_sig, Sx => MM_sig);
     
@@ -150,7 +151,10 @@ begin
     
     ZF2: Data_In_RAM_sig <= x"00" & Data_Out_sig;
     
-    SClk: DivClk port map ( Reset => Reset, Clk => CLK, TimeP => 4, Clk1 => slow_clk);
+    SClk: DivClk port map ( Reset => rst_not, Clk => CLK, TimeP => 3, Clk1 => slow_clk);
     
+    rst_not <= NOT RESET;
+
+    Address_In_MCP_sig <= Address_Out_DP_sig;
 
 end Behavioral;

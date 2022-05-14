@@ -33,7 +33,6 @@ read_vhdl -library xil_defaultlib {
   {/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/7segdriver.vhd}
   {/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/8bit_Register.vhd}
   {/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/ALU.vhd}
-  {/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/AND2.vhd}
   {/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/D_ff_arst.vhd}
   {/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/Datapath.vhd}
   {/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/DestinationDecoder.vhd}
@@ -49,9 +48,7 @@ read_vhdl -library xil_defaultlib {
   {/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1x8.vhd}
   {/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX3x1.vhd}
   {/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MicroprogramController.vhd}
-  {/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/NOT1.vhd}
   {/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/NegZero.vhd}
-  {/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/OR2.vhd}
   {/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/PortReg8x8.vhd}
   {/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/ProgramCounter.vhd}
   {/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/Ram256X16.vhd}
@@ -73,8 +70,8 @@ read_vhdl -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /zhome/5f/5/155462/MCU/Nexys_4_DDR_Master.xdc
-set_property used_in_implementation false [get_files /zhome/5f/5/155462/MCU/Nexys_4_DDR_Master.xdc]
+read_xdc {{/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/constrs_1/imports/FINAL/Nexys_4_DDR_Master.xdc}}
+set_property used_in_implementation false [get_files {{/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/constrs_1/imports/FINAL/Nexys_4_DDR_Master.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]

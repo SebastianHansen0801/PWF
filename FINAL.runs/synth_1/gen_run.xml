@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1651685410">
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1652529876">
   <File Type="VDS-TIMING-PB" Name="MCU_TOP_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="MCU_TOP_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="MCU_TOP.dcp"/>
-  <File Type="PA-TCL" Name="MCU_TOP.tcl"/>
-  <File Type="REPORTS-TCL" Name="MCU_TOP_reports.tcl"/>
-  <File Type="RDS-RDS" Name="MCU_TOP.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="MCU_TOP_drc_synth.rpt"/>
-  <File Type="RDS-UTIL" Name="MCU_TOP_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="MCU_TOP_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="MCU_TOP_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="MCU_TOP_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="MCU_TOP.vds"/>
+  <File Type="REPORTS-TCL" Name="MCU_TOP_reports.tcl"/>
+  <File Type="PA-TCL" Name="MCU_TOP.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/7segdriver.vhd">
@@ -24,12 +24,6 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/ALU.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/AND2.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -125,19 +119,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/NOT1.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/NegZero.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/new/OR2.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -222,8 +204,10 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
-    <File Path="$PPRDIR/../../MCU/Nexys_4_DDR_Master.xdc">
+    <File Path="$PSRCDIR/constrs_1/imports/FINAL/Nexys_4_DDR_Master.xdc">
       <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/Nexys_4_DDR_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1652372567"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>

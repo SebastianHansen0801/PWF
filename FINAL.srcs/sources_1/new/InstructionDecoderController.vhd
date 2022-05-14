@@ -75,6 +75,11 @@ begin
                     MM <= '0';
                     MW <= '0';
                     
+                    opcode <= "0000000";
+                    DX_int <= "000";
+                    AX_int <= "000";
+                    BX_int <= "000";
+                    
                     NextState <= INF;
                 
                 when INF =>
@@ -448,7 +453,7 @@ begin
                 when EX4 =>
                     if opcode = "0001101" then -- SRM
                         IL <= '0';
-                        PS <= "00";
+                        PS <= "01";
                         DX <= '0' & DX_int; AX <= "1000"; BX <= '-' & BX_int;
                         MB <= '-';
                         FS <= "0000";
@@ -460,7 +465,7 @@ begin
                         NextState <= INF;
                     elsif opcode = "0001110" then -- SLM
                         IL <= '0';
-                        PS <= "00";
+                        PS <= "01";
                         DX <= '0' & DX_int; AX <= "1000"; BX <= '-' & BX_int;
                         MB <= '-';
                         FS <= "0000";

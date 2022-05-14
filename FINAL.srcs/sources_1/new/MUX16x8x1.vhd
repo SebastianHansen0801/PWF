@@ -46,7 +46,7 @@ begin
                 R1 when D_Select = "0001" else
                 R2 when D_Select = "0010" else
                 R3 when D_Select = "0011" else
-                R4 when D_Select = "0010" else
+                R4 when D_Select = "0100" else
                 R5 when D_Select = "0101" else
                 R6 when D_Select = "0110" else
                 R7 when D_Select = "0111" else

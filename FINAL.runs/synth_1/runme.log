@@ -14,12 +14,12 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 1463 
+INFO: Helper process launched with PID 10538 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1366.133 ; gain = 84.836 ; free physical = 212106 ; free virtual = 249461
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1365.141 ; gain = 83.836 ; free physical = 44170 ; free virtual = 124927
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'MCU_TOP' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MCU_TOP.vhd:43]
-INFO: [Synth 8-3491] module 'Datapath' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/Datapath.vhd:34' bound to instance 'DP' of component 'Datapath' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MCU_TOP.vhd:131]
+INFO: [Synth 8-3491] module 'Datapath' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/Datapath.vhd:34' bound to instance 'DP' of component 'Datapath' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MCU_TOP.vhd:132]
 INFO: [Synth 8-638] synthesizing module 'Datapath' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/Datapath.vhd:49]
 INFO: [Synth 8-3491] module 'RegisterFile' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/RegsiterFile.vhd:34' bound to instance 'RF' of component 'RegisterFile' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/Datapath.vhd:80]
 INFO: [Synth 8-638] synthesizing module 'RegisterFile' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/RegsiterFile.vhd:43]
@@ -74,17 +74,7 @@ INFO: [Synth 8-638] synthesizing module 'arith_circuit' [/zhome/5f/5/155462/MCU 
 	Parameter width bound to: 7 - type: integer 
 INFO: [Synth 8-3491] module 'MUX2x1' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1.vhd:34' bound to instance 'MX' of component 'MUX2x1' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/arith_circuit.vhd:46]
 INFO: [Synth 8-638] synthesizing module 'MUX2x1' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1.vhd:41]
-INFO: [Synth 8-3491] module 'AND2' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/AND2.vhd:34' bound to instance 'U0' of component 'AND2' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1.vhd:64]
-INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_AND2' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/AND2.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_AND2' (7#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/AND2.vhd:40]
-INFO: [Synth 8-3491] module 'AND2' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/AND2.vhd:34' bound to instance 'U1' of component 'AND2' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1.vhd:65]
-INFO: [Synth 8-3491] module 'NOT1' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/NOT1.vhd:34' bound to instance 'U2' of component 'NOT1' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1.vhd:66]
-INFO: [Synth 8-638] synthesizing module 'NOT1' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/NOT1.vhd:39]
-INFO: [Synth 8-256] done synthesizing module 'NOT1' (8#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/NOT1.vhd:39]
-INFO: [Synth 8-3491] module 'OR2' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/OR2.vhd:34' bound to instance 'U3' of component 'OR2' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1.vhd:67]
-INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_OR2' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/OR2.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_OR2' (9#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/OR2.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'MUX2x1' (10#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'MUX2x1' (7#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1.vhd:41]
 INFO: [Synth 8-3491] module 'MUX2x1' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1.vhd:34' bound to instance 'MX' of component 'MUX2x1' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/arith_circuit.vhd:46]
 INFO: [Synth 8-3491] module 'MUX2x1' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1.vhd:34' bound to instance 'MX' of component 'MUX2x1' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/arith_circuit.vhd:46]
 INFO: [Synth 8-3491] module 'MUX2x1' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1.vhd:34' bound to instance 'MX' of component 'MUX2x1' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/arith_circuit.vhd:46]
@@ -96,9 +86,9 @@ INFO: [Synth 8-3491] module 'FullAdder' declared at '/zhome/5f/5/155462/MCU proj
 INFO: [Synth 8-638] synthesizing module 'FullAdder' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/FullAdder.vhd:17]
 INFO: [Synth 8-3491] module 'HalfAdder' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/HalfAdder.vhd:6' bound to instance 'u1' of component 'HalfAdder' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/FullAdder.vhd:29]
 INFO: [Synth 8-638] synthesizing module 'HalfAdder' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/HalfAdder.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'HalfAdder' (11#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/HalfAdder.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'HalfAdder' (8#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/HalfAdder.vhd:13]
 INFO: [Synth 8-3491] module 'HalfAdder' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/HalfAdder.vhd:6' bound to instance 'u2' of component 'HalfAdder' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/FullAdder.vhd:30]
-INFO: [Synth 8-256] done synthesizing module 'FullAdder' (12#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/FullAdder.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'FullAdder' (9#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/FullAdder.vhd:17]
 INFO: [Synth 8-3491] module 'FullAdder' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/FullAdder.vhd:7' bound to instance 'UX' of component 'FullAdder' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/arith_circuit.vhd:58]
 INFO: [Synth 8-3491] module 'FullAdder' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/FullAdder.vhd:7' bound to instance 'UX' of component 'FullAdder' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/arith_circuit.vhd:58]
 INFO: [Synth 8-3491] module 'FullAdder' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/FullAdder.vhd:7' bound to instance 'UX' of component 'FullAdder' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/arith_circuit.vhd:58]
@@ -106,27 +96,27 @@ INFO: [Synth 8-3491] module 'FullAdder' declared at '/zhome/5f/5/155462/MCU proj
 INFO: [Synth 8-3491] module 'FullAdder' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/FullAdder.vhd:7' bound to instance 'UX' of component 'FullAdder' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/arith_circuit.vhd:58]
 INFO: [Synth 8-3491] module 'FullAdder' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/FullAdder.vhd:7' bound to instance 'UX' of component 'FullAdder' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/arith_circuit.vhd:58]
 INFO: [Synth 8-3491] module 'FullAdder' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/FullAdder.vhd:7' bound to instance 'Umsb' of component 'FullAdder' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/arith_circuit.vhd:62]
-INFO: [Synth 8-256] done synthesizing module 'arith_circuit' (13#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/arith_circuit.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'arith_circuit' (10#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/arith_circuit.vhd:21]
 INFO: [Synth 8-3491] module 'logic_unit' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/logic_unit.vhd:9' bound to instance 'LU' of component 'logic_unit' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/ALU.vhd:54]
 INFO: [Synth 8-638] synthesizing module 'logic_unit' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/logic_unit.vhd:18]
 	Parameter width bound to: 7 - type: integer 
 INFO: [Synth 8-226] default block is never used [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/logic_unit.vhd:23]
-INFO: [Synth 8-256] done synthesizing module 'logic_unit' (14#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/logic_unit.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'logic_unit' (11#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/logic_unit.vhd:18]
 INFO: [Synth 8-3491] module 'MUX2x1x8' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1x8.vhd:8' bound to instance 'MUXS' of component 'MUX2x1x8' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/ALU.vhd:55]
 INFO: [Synth 8-638] synthesizing module 'MUX2x1x8' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1x8.vhd:16]
 	Parameter width bound to: 7 - type: integer 
 INFO: [Synth 8-226] default block is never used [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1x8.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'MUX2x1x8' (15#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1x8.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'ALU' (16#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/ALU.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'MUX2x1x8' (12#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1x8.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (13#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/ALU.vhd:19]
 INFO: [Synth 8-3491] module 'F_sel' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/F_sel.vhd:8' bound to instance 'FSEL' of component 'F_sel' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/function_unit.vhd:59]
 INFO: [Synth 8-638] synthesizing module 'F_sel' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/F_sel.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'F_sel' (17#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/F_sel.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'F_sel' (14#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/F_sel.vhd:14]
 INFO: [Synth 8-3491] module 'shifter_8bit' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/shifter_8bit.vhd:5' bound to instance 'SHIFT' of component 'shifter_8bit' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/function_unit.vhd:60]
 INFO: [Synth 8-638] synthesizing module 'shifter_8bit' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/shifter_8bit.vhd:12]
 	Parameter width bound to: 7 - type: integer 
 INFO: [Synth 8-3491] module 'MUX3x1' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX3x1.vhd:5' bound to instance 'U0_MUX3x1' of component 'MUX3x1' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/shifter_8bit.vhd:26]
 INFO: [Synth 8-638] synthesizing module 'MUX3x1' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX3x1.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'MUX3x1' (18#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX3x1.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'MUX3x1' (15#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX3x1.vhd:13]
 INFO: [Synth 8-3491] module 'MUX3x1' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX3x1.vhd:5' bound to instance 'UX_MUX3x1' of component 'MUX3x1' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/shifter_8bit.vhd:30]
 INFO: [Synth 8-3491] module 'MUX3x1' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX3x1.vhd:5' bound to instance 'UX_MUX3x1' of component 'MUX3x1' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/shifter_8bit.vhd:30]
 INFO: [Synth 8-3491] module 'MUX3x1' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX3x1.vhd:5' bound to instance 'UX_MUX3x1' of component 'MUX3x1' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/shifter_8bit.vhd:30]
@@ -134,45 +124,45 @@ INFO: [Synth 8-3491] module 'MUX3x1' declared at '/zhome/5f/5/155462/MCU project
 INFO: [Synth 8-3491] module 'MUX3x1' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX3x1.vhd:5' bound to instance 'UX_MUX3x1' of component 'MUX3x1' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/shifter_8bit.vhd:30]
 INFO: [Synth 8-3491] module 'MUX3x1' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX3x1.vhd:5' bound to instance 'UX_MUX3x1' of component 'MUX3x1' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/shifter_8bit.vhd:30]
 INFO: [Synth 8-3491] module 'MUX3x1' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX3x1.vhd:5' bound to instance 'UX_MUX3x1' of component 'MUX3x1' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/shifter_8bit.vhd:34]
-INFO: [Synth 8-256] done synthesizing module 'shifter_8bit' (19#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/shifter_8bit.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'shifter_8bit' (16#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/shifter_8bit.vhd:12]
 INFO: [Synth 8-3491] module 'MUX2x1x8' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1x8.vhd:8' bound to instance 'MUXF' of component 'MUX2x1x8' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/function_unit.vhd:61]
 INFO: [Synth 8-3491] module 'NegZero' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/NegZero.vhd:6' bound to instance 'NZ' of component 'NegZero' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/function_unit.vhd:62]
 INFO: [Synth 8-638] synthesizing module 'NegZero' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/NegZero.vhd:13]
 	Parameter width bound to: 7 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'NegZero' (20#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/NegZero.vhd:13]
-INFO: [Synth 8-256] done synthesizing module 'function_unit' (21#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/function_unit.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'NegZero' (17#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/NegZero.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'function_unit' (18#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/function_unit.vhd:15]
 	Parameter width bound to: 7 - type: integer 
 INFO: [Synth 8-3491] module 'MUX2x1x8' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1x8.vhd:8' bound to instance 'MUXB' of component 'MUX2x1x8' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/Datapath.vhd:82]
 INFO: [Synth 8-638] synthesizing module 'MUX2x1x8__parameterized1' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1x8.vhd:16]
 	Parameter width bound to: 7 - type: integer 
 INFO: [Synth 8-226] default block is never used [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1x8.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'MUX2x1x8__parameterized1' (21#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1x8.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'MUX2x1x8__parameterized1' (18#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1x8.vhd:16]
 	Parameter width bound to: 7 - type: integer 
 INFO: [Synth 8-3491] module 'MUX2x1x8' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1x8.vhd:8' bound to instance 'MUXD' of component 'MUX2x1x8' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/Datapath.vhd:83]
-INFO: [Synth 8-256] done synthesizing module 'Datapath' (22#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/Datapath.vhd:49]
-INFO: [Synth 8-3491] module 'MicroprogramController' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MicroprogramController.vhd:34' bound to instance 'MCP' of component 'MicroprogramController' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MCU_TOP.vhd:136]
+INFO: [Synth 8-256] done synthesizing module 'Datapath' (19#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/Datapath.vhd:49]
+INFO: [Synth 8-3491] module 'MicroprogramController' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MicroprogramController.vhd:34' bound to instance 'MCP' of component 'MicroprogramController' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MCU_TOP.vhd:137]
 INFO: [Synth 8-638] synthesizing module 'MicroprogramController' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MicroprogramController.vhd:46]
 INFO: [Synth 8-3491] module 'ProgramCounter' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/ProgramCounter.vhd:5' bound to instance 'U0' of component 'ProgramCounter' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MicroprogramController.vhd:93]
 INFO: [Synth 8-638] synthesizing module 'ProgramCounter' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/ProgramCounter.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'ProgramCounter' (23#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/ProgramCounter.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'ProgramCounter' (20#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/ProgramCounter.vhd:16]
 INFO: [Synth 8-3491] module 'InstructionRegister' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/InstructionRegister.vhd:4' bound to instance 'U1' of component 'InstructionRegister' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MicroprogramController.vhd:94]
 INFO: [Synth 8-638] synthesizing module 'InstructionRegister' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/InstructionRegister.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'InstructionRegister' (24#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/InstructionRegister.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'InstructionRegister' (21#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/InstructionRegister.vhd:14]
 INFO: [Synth 8-3491] module 'InstructionDecoderController' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/InstructionDecoderController.vhd:34' bound to instance 'U2' of component 'InstructionDecoderController' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MicroprogramController.vhd:95]
 INFO: [Synth 8-638] synthesizing module 'InstructionDecoderController' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/InstructionDecoderController.vhd:45]
 WARNING: [Synth 8-614] signal 'DX_int' is read in the process but is not in the sensitivity list [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/InstructionDecoderController.vhd:64]
 WARNING: [Synth 8-614] signal 'AX_int' is read in the process but is not in the sensitivity list [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/InstructionDecoderController.vhd:64]
 WARNING: [Synth 8-614] signal 'BX_int' is read in the process but is not in the sensitivity list [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/InstructionDecoderController.vhd:64]
 WARNING: [Synth 8-614] signal 'opcode' is read in the process but is not in the sensitivity list [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/InstructionDecoderController.vhd:64]
-INFO: [Synth 8-256] done synthesizing module 'InstructionDecoderController' (25#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/InstructionDecoderController.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'InstructionDecoderController' (22#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/InstructionDecoderController.vhd:45]
 INFO: [Synth 8-3491] module 'SignExtender' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/SignExtender.vhd:5' bound to instance 'U4' of component 'SignExtender' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MicroprogramController.vhd:97]
 INFO: [Synth 8-638] synthesizing module 'SignExtender' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/SignExtender.vhd:12]
-INFO: [Synth 8-256] done synthesizing module 'SignExtender' (26#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/SignExtender.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'SignExtender' (23#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/SignExtender.vhd:12]
 INFO: [Synth 8-3491] module 'ZeroFiller' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/ZeroFiller.vhd:5' bound to instance 'U5' of component 'ZeroFiller' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MicroprogramController.vhd:98]
 INFO: [Synth 8-638] synthesizing module 'ZeroFiller' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/ZeroFiller.vhd:12]
-INFO: [Synth 8-256] done synthesizing module 'ZeroFiller' (27#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/ZeroFiller.vhd:12]
-INFO: [Synth 8-256] done synthesizing module 'MicroprogramController' (28#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MicroprogramController.vhd:46]
-INFO: [Synth 8-3491] module 'Ram256X16' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/Ram256X16.vhd:57' bound to instance 'RAM' of component 'RAM256X16' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MCU_TOP.vhd:141]
+INFO: [Synth 8-256] done synthesizing module 'ZeroFiller' (24#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/ZeroFiller.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'MicroprogramController' (25#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MicroprogramController.vhd:46]
+INFO: [Synth 8-3491] module 'Ram256X16' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/Ram256X16.vhd:57' bound to instance 'RAM' of component 'RAM256X16' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MCU_TOP.vhd:142]
 INFO: [Synth 8-638] synthesizing module 'Ram256X16' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/Ram256X16.vhd:69]
 	Parameter BRAM_SIZE bound to: 18Kb - type: string 
 	Parameter DEVICE bound to: 7SERIES - type: string 
@@ -194,8 +184,8 @@ INFO: [Synth 8-638] synthesizing module 'Ram256X16' [/zhome/5f/5/155462/MCU proj
 	Parameter INITP_0D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INITP_0E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INITP_0F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
-	Parameter INIT_00 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000010011000001001101000100100000101100000010000001101000 
-	Parameter INIT_01 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_00 bound to: 256'b0100000000101001000011010110100001000000001010000000110101101000010000000010101000000100100000010010000001110000001000000011100000001011011101000000110110111000100001011111101100011101111110101000010111111111000111011111101110011001000001001001100111000111 
+	Parameter INIT_01 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001110000000011000 
 	Parameter INIT_02 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INIT_03 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INIT_04 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
@@ -349,8 +339,8 @@ INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SINGLE_MACRO' [/zhome/06/
 	Parameter INITP_0D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INITP_0E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INITP_0F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
-	Parameter INIT_00 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000010011000001001101000100100000101100000010000001101000 
-	Parameter INIT_01 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_00 bound to: 256'b0100000000101001000011010110100001000000001010000000110101101000010000000010101000000100100000010010000001110000001000000011100000001011011101000000110110111000100001011111101100011101111110101000010111111111000111011111101110011001000001001001100111000111 
+	Parameter INIT_01 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001110000000011000 
 	Parameter INIT_02 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INIT_03 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INIT_04 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
@@ -494,8 +484,8 @@ INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SINGLE_MACRO' [/zhome/06/
 	Parameter INITP_05 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INITP_06 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INITP_07 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
-	Parameter INIT_00 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000010011000001001101000100100000101100000010000001101000 
-	Parameter INIT_01 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_00 bound to: 256'b0100000000101001000011010110100001000000001010000000110101101000010000000010101000000100100000010010000001110000001000000011100000001011011101000000110110111000100001011111101100011101111110101000010111111111000111011111101110011001000001001001100111000111 
+	Parameter INIT_01 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001110000000011000 
 	Parameter INIT_02 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INIT_03 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INIT_04 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
@@ -584,29 +574,29 @@ INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SINGLE_MACRO' [/zhome/06/
 	Parameter WRITE_WIDTH_A bound to: 18 - type: integer 
 	Parameter WRITE_WIDTH_B bound to: 0 - type: integer 
 INFO: [Synth 8-113] binding component instance 'ram18_bl' to cell 'RAMB18E1' [/zhome/06/1/78900/Xilinx/Vivado/2018.2/data/vhdl/src/unimacro/BRAM_SINGLE_MACRO.vhd:2294]
-INFO: [Synth 8-256] done synthesizing module 'unimacro_BRAM_SINGLE_MACRO' (29#1) [/zhome/06/1/78900/Xilinx/Vivado/2018.2/data/vhdl/src/unimacro/BRAM_SINGLE_MACRO.vhd:211]
-INFO: [Synth 8-256] done synthesizing module 'Ram256X16' (30#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/Ram256X16.vhd:69]
-INFO: [Synth 8-3491] module 'PortReg8x8' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/PortReg8x8.vhd:34' bound to instance 'PRM' of component 'PortReg8x8' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MCU_TOP.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'unimacro_BRAM_SINGLE_MACRO' (26#1) [/zhome/06/1/78900/Xilinx/Vivado/2018.2/data/vhdl/src/unimacro/BRAM_SINGLE_MACRO.vhd:211]
+INFO: [Synth 8-256] done synthesizing module 'Ram256X16' (27#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/Ram256X16.vhd:69]
+INFO: [Synth 8-3491] module 'PortReg8x8' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/PortReg8x8.vhd:34' bound to instance 'PRM' of component 'PortReg8x8' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MCU_TOP.vhd:144]
 INFO: [Synth 8-638] synthesizing module 'PortReg8x8' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/PortReg8x8.vhd:55]
-INFO: [Synth 8-3491] module 'SevenSeg4' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/7segdriver.vhd:7' bound to instance 'U0' of component 'SevenSeg4' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/PortReg8x8.vhd:70]
+INFO: [Synth 8-3491] module 'SevenSeg4' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/7segdriver.vhd:7' bound to instance 'U0' of component 'SevenSeg4' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/PortReg8x8.vhd:78]
 INFO: [Synth 8-638] synthesizing module 'SevenSeg4' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/7segdriver.vhd:14]
 INFO: [Synth 8-226] default block is never used [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/7segdriver.vhd:51]
-INFO: [Synth 8-256] done synthesizing module 'SevenSeg4' (31#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/7segdriver.vhd:14]
-WARNING: [Synth 8-614] signal 'MW' is read in the process but is not in the sensitivity list [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/PortReg8x8.vhd:85]
-INFO: [Synth 8-256] done synthesizing module 'PortReg8x8' (32#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/PortReg8x8.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'SevenSeg4' (28#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/7segdriver.vhd:14]
+INFO: [Synth 8-3491] module 'DivClk' declared at '/zhome/5f/5/155462/MCU project/FINAL/DivClk.vhd:7' bound to instance 'U1' of component 'DivClk' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/PortReg8x8.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'DivClk' [/zhome/5f/5/155462/MCU project/FINAL/DivClk.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'DivClk' (29#1) [/zhome/5f/5/155462/MCU project/FINAL/DivClk.vhd:14]
+WARNING: [Synth 8-614] signal 'MW' is read in the process but is not in the sensitivity list [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/PortReg8x8.vhd:94]
+INFO: [Synth 8-256] done synthesizing module 'PortReg8x8' (30#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/PortReg8x8.vhd:55]
 	Parameter width bound to: 7 - type: integer 
-INFO: [Synth 8-3491] module 'MUX2x1x8' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1x8.vhd:8' bound to instance 'MUXM' of component 'MUX2x1x8' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MCU_TOP.vhd:147]
+INFO: [Synth 8-3491] module 'MUX2x1x8' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1x8.vhd:8' bound to instance 'MUXM' of component 'MUX2x1x8' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MCU_TOP.vhd:148]
 	Parameter width bound to: 15 - type: integer 
-INFO: [Synth 8-3491] module 'MUX2x1x16' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1x16.vhd:34' bound to instance 'MUXMR' of component 'MUX2x1x16' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MCU_TOP.vhd:149]
+INFO: [Synth 8-3491] module 'MUX2x1x16' declared at '/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1x16.vhd:34' bound to instance 'MUXMR' of component 'MUX2x1x16' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MCU_TOP.vhd:150]
 INFO: [Synth 8-638] synthesizing module 'MUX2x1x16' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1x16.vhd:42]
 	Parameter width bound to: 15 - type: integer 
 INFO: [Synth 8-226] default block is never used [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1x16.vhd:47]
-INFO: [Synth 8-256] done synthesizing module 'MUX2x1x16' (33#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1x16.vhd:42]
-INFO: [Synth 8-3491] module 'DivClk' declared at '/zhome/5f/5/155462/MCU project/FINAL/DivClk.vhd:7' bound to instance 'SClk' of component 'DivClk' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MCU_TOP.vhd:153]
-INFO: [Synth 8-638] synthesizing module 'DivClk' [/zhome/5f/5/155462/MCU project/FINAL/DivClk.vhd:14]
-INFO: [Synth 8-256] done synthesizing module 'DivClk' (34#1) [/zhome/5f/5/155462/MCU project/FINAL/DivClk.vhd:14]
-WARNING: [Synth 8-3848] Net Address_In_MCP_sig in module/entity MCU_TOP does not have driver. [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MCU_TOP.vhd:123]
-INFO: [Synth 8-256] done synthesizing module 'MCU_TOP' (35#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MCU_TOP.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'MUX2x1x16' (31#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1x16.vhd:42]
+INFO: [Synth 8-3491] module 'DivClk' declared at '/zhome/5f/5/155462/MCU project/FINAL/DivClk.vhd:7' bound to instance 'SClk' of component 'DivClk' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MCU_TOP.vhd:154]
+INFO: [Synth 8-256] done synthesizing module 'MCU_TOP' (32#1) [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MCU_TOP.vhd:43]
 WARNING: [Synth 8-3331] design ZeroFiller has unconnected port IR[15]
 WARNING: [Synth 8-3331] design ZeroFiller has unconnected port IR[14]
 WARNING: [Synth 8-3331] design ZeroFiller has unconnected port IR[13]
@@ -633,7 +623,7 @@ WARNING: [Synth 8-3331] design SignExtender has unconnected port IR[3]
 WARNING: [Synth 8-3331] design InstructionDecoderController has unconnected port V
 WARNING: [Synth 8-3331] design InstructionDecoderController has unconnected port C
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1414.773 ; gain = 133.477 ; free physical = 212109 ; free virtual = 249465
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1414.781 ; gain = 133.477 ; free physical = 44174 ; free virtual = 124932
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -642,22 +632,14 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin MCP:Address_In[7] to constant 0 [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MCU_TOP.vhd:136]
-WARNING: [Synth 8-3295] tying undriven pin MCP:Address_In[6] to constant 0 [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MCU_TOP.vhd:136]
-WARNING: [Synth 8-3295] tying undriven pin MCP:Address_In[5] to constant 0 [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MCU_TOP.vhd:136]
-WARNING: [Synth 8-3295] tying undriven pin MCP:Address_In[4] to constant 0 [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MCU_TOP.vhd:136]
-WARNING: [Synth 8-3295] tying undriven pin MCP:Address_In[3] to constant 0 [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MCU_TOP.vhd:136]
-WARNING: [Synth 8-3295] tying undriven pin MCP:Address_In[2] to constant 0 [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MCU_TOP.vhd:136]
-WARNING: [Synth 8-3295] tying undriven pin MCP:Address_In[1] to constant 0 [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MCU_TOP.vhd:136]
-WARNING: [Synth 8-3295] tying undriven pin MCP:Address_In[0] to constant 0 [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MCU_TOP.vhd:136]
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1414.773 ; gain = 133.477 ; free physical = 212112 ; free virtual = 249469
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1414.781 ; gain = 133.477 ; free physical = 44176 ; free virtual = 124934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1414.773 ; gain = 133.477 ; free physical = 212112 ; free virtual = 249469
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1414.781 ; gain = 133.477 ; free physical = 44176 ; free virtual = 124934
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -666,53 +648,56 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/zhome/5f/5/155462/MCU/Nexys_4_DDR_Master.xdc]
-CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [/zhome/5f/5/155462/MCU/Nexys_4_DDR_Master.xdc:11]
-WARNING: [Vivado 12-584] No ports matched 'segments[0]'. [/zhome/5f/5/155462/MCU/Nexys_4_DDR_Master.xdc:67]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/zhome/5f/5/155462/MCU/Nexys_4_DDR_Master.xdc:67]
+Parsing XDC File [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/constrs_1/imports/FINAL/Nexys_4_DDR_Master.xdc]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/constrs_1/imports/FINAL/Nexys_4_DDR_Master.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'segments[0]'. [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/constrs_1/imports/FINAL/Nexys_4_DDR_Master.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/constrs_1/imports/FINAL/Nexys_4_DDR_Master.xdc:66]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'segments[1]'. [/zhome/5f/5/155462/MCU/Nexys_4_DDR_Master.xdc:68]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/zhome/5f/5/155462/MCU/Nexys_4_DDR_Master.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'segments[1]'. [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/constrs_1/imports/FINAL/Nexys_4_DDR_Master.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/constrs_1/imports/FINAL/Nexys_4_DDR_Master.xdc:67]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'segments[2]'. [/zhome/5f/5/155462/MCU/Nexys_4_DDR_Master.xdc:69]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/zhome/5f/5/155462/MCU/Nexys_4_DDR_Master.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'segments[2]'. [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/constrs_1/imports/FINAL/Nexys_4_DDR_Master.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/constrs_1/imports/FINAL/Nexys_4_DDR_Master.xdc:68]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'segments[3]'. [/zhome/5f/5/155462/MCU/Nexys_4_DDR_Master.xdc:70]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/zhome/5f/5/155462/MCU/Nexys_4_DDR_Master.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'segments[3]'. [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/constrs_1/imports/FINAL/Nexys_4_DDR_Master.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/constrs_1/imports/FINAL/Nexys_4_DDR_Master.xdc:69]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'segments[4]'. [/zhome/5f/5/155462/MCU/Nexys_4_DDR_Master.xdc:71]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/zhome/5f/5/155462/MCU/Nexys_4_DDR_Master.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'segments[4]'. [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/constrs_1/imports/FINAL/Nexys_4_DDR_Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/constrs_1/imports/FINAL/Nexys_4_DDR_Master.xdc:70]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'segments[5]'. [/zhome/5f/5/155462/MCU/Nexys_4_DDR_Master.xdc:72]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/zhome/5f/5/155462/MCU/Nexys_4_DDR_Master.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'segments[5]'. [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/constrs_1/imports/FINAL/Nexys_4_DDR_Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/constrs_1/imports/FINAL/Nexys_4_DDR_Master.xdc:71]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'segments[6]'. [/zhome/5f/5/155462/MCU/Nexys_4_DDR_Master.xdc:73]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/zhome/5f/5/155462/MCU/Nexys_4_DDR_Master.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'segments[6]'. [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/constrs_1/imports/FINAL/Nexys_4_DDR_Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/constrs_1/imports/FINAL/Nexys_4_DDR_Master.xdc:72]
 Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-Finished Parsing XDC File [/zhome/5f/5/155462/MCU/Nexys_4_DDR_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/zhome/5f/5/155462/MCU/Nexys_4_DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MCU_TOP_propImpl.xdc].
+WARNING: [Vivado 12-584] No ports matched 'dp'. [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/constrs_1/imports/FINAL/Nexys_4_DDR_Master.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/constrs_1/imports/FINAL/Nexys_4_DDR_Master.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/constrs_1/imports/FINAL/Nexys_4_DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/constrs_1/imports/FINAL/Nexys_4_DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MCU_TOP_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/MCU_TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1810.699 ; gain = 0.000 ; free physical = 211833 ; free virtual = 249190
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1810.699 ; gain = 0.000 ; free physical = 43906 ; free virtual = 124664
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:50 . Memory (MB): peak = 1810.699 ; gain = 529.402 ; free physical = 211931 ; free virtual = 249288
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:51 . Memory (MB): peak = 1810.699 ; gain = 529.395 ; free physical = 43990 ; free virtual = 124748
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:50 . Memory (MB): peak = 1810.699 ; gain = 529.402 ; free physical = 211931 ; free virtual = 249288
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:51 . Memory (MB): peak = 1810.699 ; gain = 529.395 ; free physical = 43990 ; free virtual = 124748
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:50 . Memory (MB): peak = 1810.699 ; gain = 529.402 ; free physical = 211934 ; free virtual = 249290
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:51 . Memory (MB): peak = 1810.699 ; gain = 529.395 ; free physical = 43992 ; free virtual = 124750
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "Zz" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "IL" won't be mapped to RAM because it is too sparse
@@ -725,6 +710,7 @@ INFO: [Synth 8-5546] ROM "MR2" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "Data_outR" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "MR3" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-327] inferring latch for variable 'Y_Data_reg' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX16x8x1.vhd:45]
+WARNING: [Synth 8-327] inferring latch for variable 'Q_reg' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX2x1.vhd:44]
 WARNING: [Synth 8-327] inferring latch for variable 'O_reg' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/MUX3x1.vhd:17]
 WARNING: [Synth 8-327] inferring latch for variable 'PS_reg' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/InstructionDecoderController.vhd:69]
 WARNING: [Synth 8-327] inferring latch for variable 'IL_reg' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/InstructionDecoderController.vhd:68]
@@ -738,12 +724,12 @@ WARNING: [Synth 8-327] inferring latch for variable 'RW_reg' [/zhome/5f/5/155462
 WARNING: [Synth 8-327] inferring latch for variable 'MM_reg' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/InstructionDecoderController.vhd:75]
 WARNING: [Synth 8-327] inferring latch for variable 'MW_reg' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/InstructionDecoderController.vhd:76]
 WARNING: [Synth 8-327] inferring latch for variable 'NextState_reg' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/InstructionDecoderController.vhd:60]
-WARNING: [Synth 8-327] inferring latch for variable 'opcode_reg' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/InstructionDecoderController.vhd:81]
-WARNING: [Synth 8-327] inferring latch for variable 'DX_int_reg' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/InstructionDecoderController.vhd:82]
-WARNING: [Synth 8-327] inferring latch for variable 'AX_int_reg' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/InstructionDecoderController.vhd:83]
-WARNING: [Synth 8-327] inferring latch for variable 'BX_int_reg' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/InstructionDecoderController.vhd:84]
+WARNING: [Synth 8-327] inferring latch for variable 'opcode_reg' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/InstructionDecoderController.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'DX_int_reg' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/InstructionDecoderController.vhd:79]
+WARNING: [Synth 8-327] inferring latch for variable 'AX_int_reg' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/InstructionDecoderController.vhd:80]
+WARNING: [Synth 8-327] inferring latch for variable 'BX_int_reg' [/zhome/5f/5/155462/MCU project/FINAL/FINAL.srcs/sources_1/new/InstructionDecoderController.vhd:81]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:51 . Memory (MB): peak = 1810.699 ; gain = 529.402 ; free physical = 211924 ; free virtual = 249282
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:52 . Memory (MB): peak = 1810.699 ; gain = 529.395 ; free physical = 43984 ; free virtual = 124743
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -756,38 +742,38 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 1     
-	   2 Input     31 Bit       Adders := 1     
-	   2 Input     25 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     31 Bit       Adders := 2     
+	   2 Input     25 Bit       Adders := 2     
 	   2 Input      8 Bit       Adders := 2     
 	   2 Input      2 Bit       Adders := 1     
 +---XORs : 
 	   2 Input      8 Bit         XORs := 1     
 	   2 Input      1 Bit         XORs := 17    
 +---Registers : 
-	               25 Bit    Registers := 1     
+	               25 Bit    Registers := 2     
 	               16 Bit    Registers := 2     
 	                8 Bit    Registers := 9     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 129   
+	                1 Bit    Registers := 130   
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 1     
-	   2 Input     31 Bit        Muxes := 1     
-	   2 Input     25 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     31 Bit        Muxes := 2     
+	   2 Input     25 Bit        Muxes := 2     
 	   2 Input     16 Bit        Muxes := 2     
-	  16 Input      8 Bit        Muxes := 2     
-	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 2     
 	   2 Input      8 Bit        Muxes := 7     
+	   8 Input      7 Bit        Muxes := 1     
 	   3 Input      4 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 5     
 	  14 Input      4 Bit        Muxes := 1     
 	   8 Input      4 Bit        Muxes := 2     
 	  13 Input      4 Bit        Muxes := 1     
 	  20 Input      4 Bit        Muxes := 1     
-	   4 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 1     
-	   8 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 4     
 	   2 Input      2 Bit        Muxes := 6     
 	  19 Input      2 Bit        Muxes := 1     
 	   8 Input      2 Bit        Muxes := 1     
@@ -795,15 +781,15 @@ Detailed RTL Component Info :
 	  14 Input      2 Bit        Muxes := 1     
 	   3 Input      2 Bit        Muxes := 1     
 	  20 Input      2 Bit        Muxes := 1     
-	  17 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 26    
 	   4 Input      1 Bit        Muxes := 12    
-	   2 Input      1 Bit        Muxes := 18    
 	   6 Input      1 Bit        Muxes := 2     
 	  13 Input      1 Bit        Muxes := 1     
-	   8 Input      1 Bit        Muxes := 10    
+	   8 Input      1 Bit        Muxes := 11    
 	  18 Input      1 Bit        Muxes := 1     
 	  11 Input      1 Bit        Muxes := 1     
 	  15 Input      1 Bit        Muxes := 1     
+	  17 Input      1 Bit        Muxes := 1     
 	   3 Input      1 Bit        Muxes := 2     
 	  14 Input      1 Bit        Muxes := 1     
 	  25 Input      1 Bit        Muxes := 1     
@@ -824,11 +810,10 @@ Module D_ff_arst
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
-Module MUX16x1x8 
+Module MUX2x1 
 Detailed RTL Component Info : 
 +---Muxes : 
-	  16 Input      8 Bit        Muxes := 1     
-	  17 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
 Module HalfAdder 
 Detailed RTL Component Info : 
 +---XORs : 
@@ -877,6 +862,7 @@ Detailed RTL Component Info :
 +---Registers : 
 	                3 Bit    Registers := 1     
 +---Muxes : 
+	   8 Input      7 Bit        Muxes := 1     
 	   3 Input      4 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 5     
 	  14 Input      4 Bit        Muxes := 1     
@@ -884,7 +870,7 @@ Detailed RTL Component Info :
 	  13 Input      4 Bit        Muxes := 1     
 	  20 Input      4 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 1     
-	   8 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 4     
 	   2 Input      2 Bit        Muxes := 5     
 	  19 Input      2 Bit        Muxes := 1     
 	   8 Input      2 Bit        Muxes := 1     
@@ -895,7 +881,7 @@ Detailed RTL Component Info :
 	   2 Input      1 Bit        Muxes := 10    
 	   6 Input      1 Bit        Muxes := 1     
 	  13 Input      1 Bit        Muxes := 1     
-	   8 Input      1 Bit        Muxes := 9     
+	   8 Input      1 Bit        Muxes := 10    
 	  18 Input      1 Bit        Muxes := 1     
 	  11 Input      1 Bit        Muxes := 1     
 	  15 Input      1 Bit        Muxes := 1     
@@ -911,8 +897,22 @@ Detailed RTL Component Info :
 +---Registers : 
 	                2 Bit    Registers := 1     
 +---Muxes : 
-	   4 Input      4 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
+Module DivClk 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input     25 Bit       Adders := 1     
++---Registers : 
+	               25 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input     25 Bit        Muxes := 1     
 Module PortReg8x8 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -929,19 +929,6 @@ Module MUX2x1x16
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input     16 Bit        Muxes := 1     
-Module DivClk 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     32 Bit       Adders := 1     
-	   2 Input     31 Bit       Adders := 1     
-	   2 Input     25 Bit       Adders := 1     
-+---Registers : 
-	               25 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     32 Bit        Muxes := 1     
-	   2 Input     31 Bit        Muxes := 1     
-	   2 Input     25 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -963,6 +950,34 @@ INFO: [Synth 8-5546] ROM "MCP/U2/IL" won't be mapped to RAM because it is too sp
 INFO: [Synth 8-5546] ROM "MCP/U2/FS" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "MCP/U2/FS" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "MCP/U2/MD" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design MCU_TOP has port Anode[7] driven by constant 1
+WARNING: [Synth 8-3917] design MCU_TOP has port Anode[6] driven by constant 1
+WARNING: [Synth 8-3917] design MCU_TOP has port Anode[5] driven by constant 1
+WARNING: [Synth 8-3917] design MCU_TOP has port Anode[4] driven by constant 1
+WARNING: [Synth 8-3332] Sequential element (DP/RF/U2/Y_Data_reg[7]) is unused and will be removed from module MCU_TOP.
+WARNING: [Synth 8-3332] Sequential element (DP/RF/U2/Y_Data_reg[6]) is unused and will be removed from module MCU_TOP.
+WARNING: [Synth 8-3332] Sequential element (DP/RF/U2/Y_Data_reg[5]) is unused and will be removed from module MCU_TOP.
+WARNING: [Synth 8-3332] Sequential element (DP/RF/U2/Y_Data_reg[4]) is unused and will be removed from module MCU_TOP.
+WARNING: [Synth 8-3332] Sequential element (DP/RF/U2/Y_Data_reg[3]) is unused and will be removed from module MCU_TOP.
+WARNING: [Synth 8-3332] Sequential element (DP/RF/U2/Y_Data_reg[2]) is unused and will be removed from module MCU_TOP.
+WARNING: [Synth 8-3332] Sequential element (DP/RF/U2/Y_Data_reg[1]) is unused and will be removed from module MCU_TOP.
+WARNING: [Synth 8-3332] Sequential element (DP/RF/U2/Y_Data_reg[0]) is unused and will be removed from module MCU_TOP.
+WARNING: [Synth 8-3332] Sequential element (DP/RF/U3/Y_Data_reg[7]) is unused and will be removed from module MCU_TOP.
+WARNING: [Synth 8-3332] Sequential element (DP/RF/U3/Y_Data_reg[6]) is unused and will be removed from module MCU_TOP.
+WARNING: [Synth 8-3332] Sequential element (DP/RF/U3/Y_Data_reg[5]) is unused and will be removed from module MCU_TOP.
+WARNING: [Synth 8-3332] Sequential element (DP/RF/U3/Y_Data_reg[4]) is unused and will be removed from module MCU_TOP.
+WARNING: [Synth 8-3332] Sequential element (DP/RF/U3/Y_Data_reg[3]) is unused and will be removed from module MCU_TOP.
+WARNING: [Synth 8-3332] Sequential element (DP/RF/U3/Y_Data_reg[2]) is unused and will be removed from module MCU_TOP.
+WARNING: [Synth 8-3332] Sequential element (DP/RF/U3/Y_Data_reg[1]) is unused and will be removed from module MCU_TOP.
+WARNING: [Synth 8-3332] Sequential element (DP/RF/U3/Y_Data_reg[0]) is unused and will be removed from module MCU_TOP.
+WARNING: [Synth 8-3332] Sequential element (DP/FU/ALUU/AU/GEN_MUX[0].MX/Q_reg) is unused and will be removed from module MCU_TOP.
+WARNING: [Synth 8-3332] Sequential element (DP/FU/ALUU/AU/GEN_MUX[1].MX/Q_reg) is unused and will be removed from module MCU_TOP.
+WARNING: [Synth 8-3332] Sequential element (DP/FU/ALUU/AU/GEN_MUX[2].MX/Q_reg) is unused and will be removed from module MCU_TOP.
+WARNING: [Synth 8-3332] Sequential element (DP/FU/ALUU/AU/GEN_MUX[3].MX/Q_reg) is unused and will be removed from module MCU_TOP.
+WARNING: [Synth 8-3332] Sequential element (DP/FU/ALUU/AU/GEN_MUX[4].MX/Q_reg) is unused and will be removed from module MCU_TOP.
+WARNING: [Synth 8-3332] Sequential element (DP/FU/ALUU/AU/GEN_MUX[5].MX/Q_reg) is unused and will be removed from module MCU_TOP.
+WARNING: [Synth 8-3332] Sequential element (DP/FU/ALUU/AU/GEN_MUX[6].MX/Q_reg) is unused and will be removed from module MCU_TOP.
+WARNING: [Synth 8-3332] Sequential element (DP/FU/ALUU/AU/GEN_MUX[7].MX/Q_reg) is unused and will be removed from module MCU_TOP.
 WARNING: [Synth 8-3332] Sequential element (DP/FU/SHIFT/GEN_MUXS[0].lsb.U0_MUX3x1/O_reg) is unused and will be removed from module MCU_TOP.
 WARNING: [Synth 8-3332] Sequential element (DP/FU/SHIFT/GEN_MUXS[1].bits.UX_MUX3x1/O_reg) is unused and will be removed from module MCU_TOP.
 WARNING: [Synth 8-3332] Sequential element (DP/FU/SHIFT/GEN_MUXS[2].bits.UX_MUX3x1/O_reg) is unused and will be removed from module MCU_TOP.
@@ -971,16 +986,8 @@ WARNING: [Synth 8-3332] Sequential element (DP/FU/SHIFT/GEN_MUXS[4].bits.UX_MUX3
 WARNING: [Synth 8-3332] Sequential element (DP/FU/SHIFT/GEN_MUXS[5].bits.UX_MUX3x1/O_reg) is unused and will be removed from module MCU_TOP.
 WARNING: [Synth 8-3332] Sequential element (DP/FU/SHIFT/GEN_MUXS[6].bits.UX_MUX3x1/O_reg) is unused and will be removed from module MCU_TOP.
 WARNING: [Synth 8-3332] Sequential element (DP/FU/SHIFT/GEN_MUXS[7].msb.UX_MUX3x1/O_reg) is unused and will be removed from module MCU_TOP.
-WARNING: [Synth 8-3332] Sequential element (DP/RF/U1/U4/gen[0].U0/Q_int_reg) is unused and will be removed from module MCU_TOP.
-WARNING: [Synth 8-3332] Sequential element (DP/RF/U1/U4/gen[1].U0/Q_int_reg) is unused and will be removed from module MCU_TOP.
-WARNING: [Synth 8-3332] Sequential element (DP/RF/U1/U4/gen[2].U0/Q_int_reg) is unused and will be removed from module MCU_TOP.
-WARNING: [Synth 8-3332] Sequential element (DP/RF/U1/U4/gen[3].U0/Q_int_reg) is unused and will be removed from module MCU_TOP.
-WARNING: [Synth 8-3332] Sequential element (DP/RF/U1/U4/gen[4].U0/Q_int_reg) is unused and will be removed from module MCU_TOP.
-WARNING: [Synth 8-3332] Sequential element (DP/RF/U1/U4/gen[5].U0/Q_int_reg) is unused and will be removed from module MCU_TOP.
-WARNING: [Synth 8-3332] Sequential element (DP/RF/U1/U4/gen[6].U0/Q_int_reg) is unused and will be removed from module MCU_TOP.
-WARNING: [Synth 8-3332] Sequential element (DP/RF/U1/U4/gen[7].U0/Q_int_reg) is unused and will be removed from module MCU_TOP.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:55 . Memory (MB): peak = 1810.699 ; gain = 529.402 ; free physical = 211902 ; free virtual = 249261
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:01:02 . Memory (MB): peak = 1810.699 ; gain = 529.395 ; free physical = 43963 ; free virtual = 124724
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -992,13 +999,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:01:09 . Memory (MB): peak = 1810.699 ; gain = 529.402 ; free physical = 211776 ; free virtual = 249143
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:01:17 . Memory (MB): peak = 1810.699 ; gain = 529.395 ; free physical = 43842 ; free virtual = 124603
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:01:10 . Memory (MB): peak = 1810.699 ; gain = 529.402 ; free physical = 211776 ; free virtual = 249142
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:01:21 . Memory (MB): peak = 1810.699 ; gain = 529.395 ; free physical = 43824 ; free virtual = 124585
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1010,7 +1017,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:01:10 . Memory (MB): peak = 1810.699 ; gain = 529.402 ; free physical = 211774 ; free virtual = 249141
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:01:21 . Memory (MB): peak = 1810.699 ; gain = 529.395 ; free physical = 43820 ; free virtual = 124581
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1034,7 +1041,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:01:10 . Memory (MB): peak = 1810.699 ; gain = 529.402 ; free physical = 211774 ; free virtual = 249141
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:01:22 . Memory (MB): peak = 1810.699 ; gain = 529.395 ; free physical = 43822 ; free virtual = 124583
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1047,7 +1054,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:01:10 . Memory (MB): peak = 1810.699 ; gain = 529.402 ; free physical = 211774 ; free virtual = 249141
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:01:22 . Memory (MB): peak = 1810.699 ; gain = 529.395 ; free physical = 43822 ; free virtual = 124583
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1059,25 +1066,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:01:10 . Memory (MB): peak = 1810.699 ; gain = 529.402 ; free physical = 211774 ; free virtual = 249141
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:01:22 . Memory (MB): peak = 1810.699 ; gain = 529.395 ; free physical = 43822 ; free virtual = 124583
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:01:10 . Memory (MB): peak = 1810.699 ; gain = 529.402 ; free physical = 211774 ; free virtual = 249141
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:01:22 . Memory (MB): peak = 1810.699 ; gain = 529.395 ; free physical = 43822 ; free virtual = 124583
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:01:10 . Memory (MB): peak = 1810.699 ; gain = 529.402 ; free physical = 211774 ; free virtual = 249141
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:01:22 . Memory (MB): peak = 1810.699 ; gain = 529.395 ; free physical = 43822 ; free virtual = 124583
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:01:10 . Memory (MB): peak = 1810.699 ; gain = 529.402 ; free physical = 211774 ; free virtual = 249141
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:01:22 . Memory (MB): peak = 1810.699 ; gain = 529.395 ; free physical = 43822 ; free virtual = 124583
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1094,200 +1101,208 @@ Report Cell Usage:
 |      |Cell     |Count |
 +------+---------+------+
 |1     |BUFG     |     2|
-|2     |CARRY4   |    11|
-|3     |LUT1     |     3|
-|4     |LUT2     |    64|
-|5     |LUT3     |    32|
-|6     |LUT4     |    33|
-|7     |LUT5     |    50|
-|8     |LUT6     |   170|
-|9     |MUXF7    |    41|
-|10    |MUXF8    |    16|
+|2     |CARRY4   |    20|
+|3     |LUT1     |     9|
+|4     |LUT2     |    99|
+|5     |LUT3     |    43|
+|6     |LUT4     |    34|
+|7     |LUT5     |    61|
+|8     |LUT6     |   172|
+|9     |MUXF7    |    19|
+|10    |MUXF8    |     1|
 |11    |RAMB18E1 |     1|
-|12    |FDCE     |   173|
+|12    |FDCE     |   271|
 |13    |FDPE     |     2|
-|14    |FDRE     |    72|
-|15    |LD       |    59|
+|14    |FDRE     |     8|
+|15    |LD       |    43|
 |16    |IBUF     |    15|
-|17    |OBUF     |    19|
+|17    |OBUF     |    23|
 +------+---------+------+
 
 Report Instance Areas: 
 +------+---------------------------+-----------------------------+------+
 |      |Instance                   |Module                       |Cells |
 +------+---------------------------+-----------------------------+------+
-|1     |top                        |                             |   763|
-|2     |  DP                       |Datapath                     |   259|
-|3     |    RF                     |RegisterFile                 |   259|
-|4     |      U1                   |RegisterR16                  |   232|
+|1     |top                        |                             |   823|
+|2     |  DP                       |Datapath                     |   230|
+|3     |    RF                     |RegisterFile                 |   230|
+|4     |      U1                   |RegisterR16                  |   230|
 |5     |        U0                 |Register_8bit                |     8|
-|6     |          \gen[0].U0       |D_ff_arst_126                |     1|
-|7     |          \gen[1].U0       |D_ff_arst_127                |     1|
-|8     |          \gen[2].U0       |D_ff_arst_128                |     1|
-|9     |          \gen[3].U0       |D_ff_arst_129                |     1|
-|10    |          \gen[4].U0       |D_ff_arst_130                |     1|
-|11    |          \gen[5].U0       |D_ff_arst_131                |     1|
-|12    |          \gen[6].U0       |D_ff_arst_132                |     1|
-|13    |          \gen[7].U0       |D_ff_arst_133                |     1|
-|14    |        U1                 |Register_8bit_1              |     8|
-|15    |          \gen[0].U0       |D_ff_arst_118                |     1|
-|16    |          \gen[1].U0       |D_ff_arst_119                |     1|
-|17    |          \gen[2].U0       |D_ff_arst_120                |     1|
-|18    |          \gen[3].U0       |D_ff_arst_121                |     1|
-|19    |          \gen[4].U0       |D_ff_arst_122                |     1|
-|20    |          \gen[5].U0       |D_ff_arst_123                |     1|
-|21    |          \gen[6].U0       |D_ff_arst_124                |     1|
-|22    |          \gen[7].U0       |D_ff_arst_125                |     1|
-|23    |        U10                |Register_8bit_2              |    32|
-|24    |          \gen[0].U0       |D_ff_arst_110                |     4|
-|25    |          \gen[1].U0       |D_ff_arst_111                |     4|
-|26    |          \gen[2].U0       |D_ff_arst_112                |     4|
-|27    |          \gen[3].U0       |D_ff_arst_113                |     4|
-|28    |          \gen[4].U0       |D_ff_arst_114                |     4|
-|29    |          \gen[5].U0       |D_ff_arst_115                |     4|
-|30    |          \gen[6].U0       |D_ff_arst_116                |     4|
-|31    |          \gen[7].U0       |D_ff_arst_117                |     4|
-|32    |        U11                |Register_8bit_3              |    16|
-|33    |          \gen[0].U0       |D_ff_arst_102                |     2|
-|34    |          \gen[1].U0       |D_ff_arst_103                |     2|
-|35    |          \gen[2].U0       |D_ff_arst_104                |     2|
-|36    |          \gen[3].U0       |D_ff_arst_105                |     2|
-|37    |          \gen[4].U0       |D_ff_arst_106                |     2|
-|38    |          \gen[5].U0       |D_ff_arst_107                |     2|
-|39    |          \gen[6].U0       |D_ff_arst_108                |     2|
-|40    |          \gen[7].U0       |D_ff_arst_109                |     2|
-|41    |        U12                |Register_8bit_4              |    32|
-|42    |          \gen[0].U0       |D_ff_arst_94                 |     4|
-|43    |          \gen[1].U0       |D_ff_arst_95                 |     4|
-|44    |          \gen[2].U0       |D_ff_arst_96                 |     4|
-|45    |          \gen[3].U0       |D_ff_arst_97                 |     4|
-|46    |          \gen[4].U0       |D_ff_arst_98                 |     4|
-|47    |          \gen[5].U0       |D_ff_arst_99                 |     4|
-|48    |          \gen[6].U0       |D_ff_arst_100                |     4|
-|49    |          \gen[7].U0       |D_ff_arst_101                |     4|
-|50    |        U13                |Register_8bit_5              |    24|
-|51    |          \gen[0].U0       |D_ff_arst_86                 |     3|
-|52    |          \gen[1].U0       |D_ff_arst_87                 |     3|
-|53    |          \gen[2].U0       |D_ff_arst_88                 |     3|
-|54    |          \gen[3].U0       |D_ff_arst_89                 |     3|
-|55    |          \gen[4].U0       |D_ff_arst_90                 |     3|
-|56    |          \gen[5].U0       |D_ff_arst_91                 |     3|
-|57    |          \gen[6].U0       |D_ff_arst_92                 |     3|
-|58    |          \gen[7].U0       |D_ff_arst_93                 |     3|
-|59    |        U14                |Register_8bit_6              |    32|
-|60    |          \gen[0].U0       |D_ff_arst_78                 |     4|
-|61    |          \gen[1].U0       |D_ff_arst_79                 |     4|
-|62    |          \gen[2].U0       |D_ff_arst_80                 |     4|
-|63    |          \gen[3].U0       |D_ff_arst_81                 |     4|
-|64    |          \gen[4].U0       |D_ff_arst_82                 |     4|
-|65    |          \gen[5].U0       |D_ff_arst_83                 |     4|
-|66    |          \gen[6].U0       |D_ff_arst_84                 |     4|
-|67    |          \gen[7].U0       |D_ff_arst_85                 |     4|
-|68    |        U15                |Register_8bit_7              |    24|
-|69    |          \gen[0].U0       |D_ff_arst_70                 |     3|
-|70    |          \gen[1].U0       |D_ff_arst_71                 |     3|
-|71    |          \gen[2].U0       |D_ff_arst_72                 |     3|
-|72    |          \gen[3].U0       |D_ff_arst_73                 |     3|
-|73    |          \gen[4].U0       |D_ff_arst_74                 |     3|
-|74    |          \gen[5].U0       |D_ff_arst_75                 |     3|
-|75    |          \gen[6].U0       |D_ff_arst_76                 |     3|
-|76    |          \gen[7].U0       |D_ff_arst_77                 |     3|
+|6     |          \gen[0].U0       |D_ff_arst_135                |     1|
+|7     |          \gen[1].U0       |D_ff_arst_136                |     1|
+|8     |          \gen[2].U0       |D_ff_arst_137                |     1|
+|9     |          \gen[3].U0       |D_ff_arst_138                |     1|
+|10    |          \gen[4].U0       |D_ff_arst_139                |     1|
+|11    |          \gen[5].U0       |D_ff_arst_140                |     1|
+|12    |          \gen[6].U0       |D_ff_arst_141                |     1|
+|13    |          \gen[7].U0       |D_ff_arst_142                |     1|
+|14    |        U1                 |Register_8bit_1              |    11|
+|15    |          \gen[0].U0       |D_ff_arst_127                |     1|
+|16    |          \gen[1].U0       |D_ff_arst_128                |     1|
+|17    |          \gen[2].U0       |D_ff_arst_129                |     1|
+|18    |          \gen[3].U0       |D_ff_arst_130                |     2|
+|19    |          \gen[4].U0       |D_ff_arst_131                |     2|
+|20    |          \gen[5].U0       |D_ff_arst_132                |     2|
+|21    |          \gen[6].U0       |D_ff_arst_133                |     1|
+|22    |          \gen[7].U0       |D_ff_arst_134                |     1|
+|23    |        U10                |Register_8bit_2              |     8|
+|24    |          \gen[0].U0       |D_ff_arst_119                |     1|
+|25    |          \gen[1].U0       |D_ff_arst_120                |     1|
+|26    |          \gen[2].U0       |D_ff_arst_121                |     1|
+|27    |          \gen[3].U0       |D_ff_arst_122                |     1|
+|28    |          \gen[4].U0       |D_ff_arst_123                |     1|
+|29    |          \gen[5].U0       |D_ff_arst_124                |     1|
+|30    |          \gen[6].U0       |D_ff_arst_125                |     1|
+|31    |          \gen[7].U0       |D_ff_arst_126                |     1|
+|32    |        U11                |Register_8bit_3              |    19|
+|33    |          \gen[0].U0       |D_ff_arst_111                |     3|
+|34    |          \gen[1].U0       |D_ff_arst_112                |     3|
+|35    |          \gen[2].U0       |D_ff_arst_113                |     3|
+|36    |          \gen[3].U0       |D_ff_arst_114                |     2|
+|37    |          \gen[4].U0       |D_ff_arst_115                |     2|
+|38    |          \gen[5].U0       |D_ff_arst_116                |     2|
+|39    |          \gen[6].U0       |D_ff_arst_117                |     2|
+|40    |          \gen[7].U0       |D_ff_arst_118                |     2|
+|41    |        U12                |Register_8bit_4              |     8|
+|42    |          \gen[0].U0       |D_ff_arst_103                |     1|
+|43    |          \gen[1].U0       |D_ff_arst_104                |     1|
+|44    |          \gen[2].U0       |D_ff_arst_105                |     1|
+|45    |          \gen[3].U0       |D_ff_arst_106                |     1|
+|46    |          \gen[4].U0       |D_ff_arst_107                |     1|
+|47    |          \gen[5].U0       |D_ff_arst_108                |     1|
+|48    |          \gen[6].U0       |D_ff_arst_109                |     1|
+|49    |          \gen[7].U0       |D_ff_arst_110                |     1|
+|50    |        U13                |Register_8bit_5              |    18|
+|51    |          \gen[0].U0       |D_ff_arst_95                 |     1|
+|52    |          \gen[1].U0       |D_ff_arst_96                 |     1|
+|53    |          \gen[2].U0       |D_ff_arst_97                 |     1|
+|54    |          \gen[3].U0       |D_ff_arst_98                 |     4|
+|55    |          \gen[4].U0       |D_ff_arst_99                 |     4|
+|56    |          \gen[5].U0       |D_ff_arst_100                |     5|
+|57    |          \gen[6].U0       |D_ff_arst_101                |     1|
+|58    |          \gen[7].U0       |D_ff_arst_102                |     1|
+|59    |        U14                |Register_8bit_6              |     8|
+|60    |          \gen[0].U0       |D_ff_arst_87                 |     1|
+|61    |          \gen[1].U0       |D_ff_arst_88                 |     1|
+|62    |          \gen[2].U0       |D_ff_arst_89                 |     1|
+|63    |          \gen[3].U0       |D_ff_arst_90                 |     1|
+|64    |          \gen[4].U0       |D_ff_arst_91                 |     1|
+|65    |          \gen[5].U0       |D_ff_arst_92                 |     1|
+|66    |          \gen[6].U0       |D_ff_arst_93                 |     1|
+|67    |          \gen[7].U0       |D_ff_arst_94                 |     1|
+|68    |        U15                |Register_8bit_7              |    32|
+|69    |          \gen[0].U0       |D_ff_arst_79                 |     4|
+|70    |          \gen[1].U0       |D_ff_arst_80                 |     5|
+|71    |          \gen[2].U0       |D_ff_arst_81                 |     5|
+|72    |          \gen[3].U0       |D_ff_arst_82                 |     2|
+|73    |          \gen[4].U0       |D_ff_arst_83                 |     2|
+|74    |          \gen[5].U0       |D_ff_arst_84                 |     2|
+|75    |          \gen[6].U0       |D_ff_arst_85                 |     7|
+|76    |          \gen[7].U0       |D_ff_arst_86                 |     5|
 |77    |        U2                 |Register_8bit_8              |     8|
-|78    |          \gen[0].U0       |D_ff_arst_62                 |     1|
-|79    |          \gen[1].U0       |D_ff_arst_63                 |     1|
-|80    |          \gen[2].U0       |D_ff_arst_64                 |     1|
-|81    |          \gen[3].U0       |D_ff_arst_65                 |     1|
-|82    |          \gen[4].U0       |D_ff_arst_66                 |     1|
-|83    |          \gen[5].U0       |D_ff_arst_67                 |     1|
-|84    |          \gen[6].U0       |D_ff_arst_68                 |     1|
-|85    |          \gen[7].U0       |D_ff_arst_69                 |     1|
-|86    |        U3                 |Register_8bit_9              |     8|
-|87    |          \gen[0].U0       |D_ff_arst_54                 |     1|
-|88    |          \gen[1].U0       |D_ff_arst_55                 |     1|
-|89    |          \gen[2].U0       |D_ff_arst_56                 |     1|
-|90    |          \gen[3].U0       |D_ff_arst_57                 |     1|
-|91    |          \gen[4].U0       |D_ff_arst_58                 |     1|
-|92    |          \gen[5].U0       |D_ff_arst_59                 |     1|
-|93    |          \gen[6].U0       |D_ff_arst_60                 |     1|
-|94    |          \gen[7].U0       |D_ff_arst_61                 |     1|
-|95    |        U5                 |Register_8bit_10             |     8|
-|96    |          \gen[0].U0       |D_ff_arst_46                 |     1|
-|97    |          \gen[1].U0       |D_ff_arst_47                 |     1|
-|98    |          \gen[2].U0       |D_ff_arst_48                 |     1|
-|99    |          \gen[3].U0       |D_ff_arst_49                 |     1|
-|100   |          \gen[4].U0       |D_ff_arst_50                 |     1|
-|101   |          \gen[5].U0       |D_ff_arst_51                 |     1|
-|102   |          \gen[6].U0       |D_ff_arst_52                 |     1|
-|103   |          \gen[7].U0       |D_ff_arst_53                 |     1|
-|104   |        U6                 |Register_8bit_11             |     8|
-|105   |          \gen[0].U0       |D_ff_arst_38                 |     1|
-|106   |          \gen[1].U0       |D_ff_arst_39                 |     1|
-|107   |          \gen[2].U0       |D_ff_arst_40                 |     1|
-|108   |          \gen[3].U0       |D_ff_arst_41                 |     1|
-|109   |          \gen[4].U0       |D_ff_arst_42                 |     1|
-|110   |          \gen[5].U0       |D_ff_arst_43                 |     1|
-|111   |          \gen[6].U0       |D_ff_arst_44                 |     1|
-|112   |          \gen[7].U0       |D_ff_arst_45                 |     1|
-|113   |        U7                 |Register_8bit_12             |     8|
-|114   |          \gen[0].U0       |D_ff_arst_30                 |     1|
-|115   |          \gen[1].U0       |D_ff_arst_31                 |     1|
-|116   |          \gen[2].U0       |D_ff_arst_32                 |     1|
-|117   |          \gen[3].U0       |D_ff_arst_33                 |     1|
-|118   |          \gen[4].U0       |D_ff_arst_34                 |     1|
-|119   |          \gen[5].U0       |D_ff_arst_35                 |     1|
-|120   |          \gen[6].U0       |D_ff_arst_36                 |     1|
-|121   |          \gen[7].U0       |D_ff_arst_37                 |     1|
-|122   |        U8                 |Register_8bit_13             |     8|
-|123   |          \gen[0].U0       |D_ff_arst_22                 |     1|
-|124   |          \gen[1].U0       |D_ff_arst_23                 |     1|
-|125   |          \gen[2].U0       |D_ff_arst_24                 |     1|
-|126   |          \gen[3].U0       |D_ff_arst_25                 |     1|
-|127   |          \gen[4].U0       |D_ff_arst_26                 |     1|
-|128   |          \gen[5].U0       |D_ff_arst_27                 |     1|
-|129   |          \gen[6].U0       |D_ff_arst_28                 |     1|
-|130   |          \gen[7].U0       |D_ff_arst_29                 |     1|
-|131   |        U9                 |Register_8bit_14             |     8|
-|132   |          \gen[0].U0       |D_ff_arst                    |     1|
-|133   |          \gen[1].U0       |D_ff_arst_15                 |     1|
-|134   |          \gen[2].U0       |D_ff_arst_16                 |     1|
-|135   |          \gen[3].U0       |D_ff_arst_17                 |     1|
-|136   |          \gen[4].U0       |D_ff_arst_18                 |     1|
-|137   |          \gen[5].U0       |D_ff_arst_19                 |     1|
-|138   |          \gen[6].U0       |D_ff_arst_20                 |     1|
-|139   |          \gen[7].U0       |D_ff_arst_21                 |     1|
-|140   |      U2                   |MUX16x1x8                    |    11|
-|141   |      U3                   |MUX16x1x8_0                  |    16|
-|142   |  MCP                      |MicroprogramController       |   277|
-|143   |    U0                     |ProgramCounter               |    43|
-|144   |    U1                     |InstructionRegister          |    22|
-|145   |    U2                     |InstructionDecoderController |   212|
-|146   |  PRM                      |PortReg8x8                   |   120|
-|147   |    U0                     |SevenSeg4                    |    19|
-|148   |  RAM                      |Ram256X16                    |     1|
-|149   |    BRAM_SINGLE_MACRO_inst |unimacro_BRAM_SINGLE_MACRO   |     1|
-|150   |  SClk                     |DivClk                       |    70|
+|78    |          \gen[0].U0       |D_ff_arst_71                 |     1|
+|79    |          \gen[1].U0       |D_ff_arst_72                 |     1|
+|80    |          \gen[2].U0       |D_ff_arst_73                 |     1|
+|81    |          \gen[3].U0       |D_ff_arst_74                 |     1|
+|82    |          \gen[4].U0       |D_ff_arst_75                 |     1|
+|83    |          \gen[5].U0       |D_ff_arst_76                 |     1|
+|84    |          \gen[6].U0       |D_ff_arst_77                 |     1|
+|85    |          \gen[7].U0       |D_ff_arst_78                 |     1|
+|86    |        U3                 |Register_8bit_9              |    38|
+|87    |          \gen[0].U0       |D_ff_arst_63                 |     5|
+|88    |          \gen[1].U0       |D_ff_arst_64                 |     4|
+|89    |          \gen[2].U0       |D_ff_arst_65                 |     4|
+|90    |          \gen[3].U0       |D_ff_arst_66                 |     5|
+|91    |          \gen[4].U0       |D_ff_arst_67                 |     5|
+|92    |          \gen[5].U0       |D_ff_arst_68                 |     5|
+|93    |          \gen[6].U0       |D_ff_arst_69                 |     5|
+|94    |          \gen[7].U0       |D_ff_arst_70                 |     5|
+|95    |        U4                 |Register_8bit_10             |     8|
+|96    |          \gen[0].U0       |D_ff_arst_55                 |     1|
+|97    |          \gen[1].U0       |D_ff_arst_56                 |     1|
+|98    |          \gen[2].U0       |D_ff_arst_57                 |     1|
+|99    |          \gen[3].U0       |D_ff_arst_58                 |     1|
+|100   |          \gen[4].U0       |D_ff_arst_59                 |     1|
+|101   |          \gen[5].U0       |D_ff_arst_60                 |     1|
+|102   |          \gen[6].U0       |D_ff_arst_61                 |     1|
+|103   |          \gen[7].U0       |D_ff_arst_62                 |     1|
+|104   |        U5                 |Register_8bit_11             |     8|
+|105   |          \gen[0].U0       |D_ff_arst_47                 |     1|
+|106   |          \gen[1].U0       |D_ff_arst_48                 |     1|
+|107   |          \gen[2].U0       |D_ff_arst_49                 |     1|
+|108   |          \gen[3].U0       |D_ff_arst_50                 |     1|
+|109   |          \gen[4].U0       |D_ff_arst_51                 |     1|
+|110   |          \gen[5].U0       |D_ff_arst_52                 |     1|
+|111   |          \gen[6].U0       |D_ff_arst_53                 |     1|
+|112   |          \gen[7].U0       |D_ff_arst_54                 |     1|
+|113   |        U6                 |Register_8bit_12             |     8|
+|114   |          \gen[0].U0       |D_ff_arst_39                 |     1|
+|115   |          \gen[1].U0       |D_ff_arst_40                 |     1|
+|116   |          \gen[2].U0       |D_ff_arst_41                 |     1|
+|117   |          \gen[3].U0       |D_ff_arst_42                 |     1|
+|118   |          \gen[4].U0       |D_ff_arst_43                 |     1|
+|119   |          \gen[5].U0       |D_ff_arst_44                 |     1|
+|120   |          \gen[6].U0       |D_ff_arst_45                 |     1|
+|121   |          \gen[7].U0       |D_ff_arst_46                 |     1|
+|122   |        U7                 |Register_8bit_13             |    24|
+|123   |          \gen[0].U0       |D_ff_arst_31                 |     3|
+|124   |          \gen[1].U0       |D_ff_arst_32                 |     3|
+|125   |          \gen[2].U0       |D_ff_arst_33                 |     3|
+|126   |          \gen[3].U0       |D_ff_arst_34                 |     3|
+|127   |          \gen[4].U0       |D_ff_arst_35                 |     3|
+|128   |          \gen[5].U0       |D_ff_arst_36                 |     3|
+|129   |          \gen[6].U0       |D_ff_arst_37                 |     3|
+|130   |          \gen[7].U0       |D_ff_arst_38                 |     3|
+|131   |        U8                 |Register_8bit_14             |     8|
+|132   |          \gen[0].U0       |D_ff_arst_23                 |     1|
+|133   |          \gen[1].U0       |D_ff_arst_24                 |     1|
+|134   |          \gen[2].U0       |D_ff_arst_25                 |     1|
+|135   |          \gen[3].U0       |D_ff_arst_26                 |     1|
+|136   |          \gen[4].U0       |D_ff_arst_27                 |     1|
+|137   |          \gen[5].U0       |D_ff_arst_28                 |     1|
+|138   |          \gen[6].U0       |D_ff_arst_29                 |     1|
+|139   |          \gen[7].U0       |D_ff_arst_30                 |     1|
+|140   |        U9                 |Register_8bit_15             |    16|
+|141   |          \gen[0].U0       |D_ff_arst                    |     2|
+|142   |          \gen[1].U0       |D_ff_arst_16                 |     2|
+|143   |          \gen[2].U0       |D_ff_arst_17                 |     2|
+|144   |          \gen[3].U0       |D_ff_arst_18                 |     2|
+|145   |          \gen[4].U0       |D_ff_arst_19                 |     2|
+|146   |          \gen[5].U0       |D_ff_arst_20                 |     2|
+|147   |          \gen[6].U0       |D_ff_arst_21                 |     2|
+|148   |          \gen[7].U0       |D_ff_arst_22                 |     2|
+|149   |  MCP                      |MicroprogramController       |   291|
+|150   |    U0                     |ProgramCounter               |    44|
+|151   |    U1                     |InstructionRegister          |    34|
+|152   |    U2                     |InstructionDecoderController |   213|
+|153   |  PRM                      |PortReg8x8                   |   191|
+|154   |    U0                     |SevenSeg4                    |    19|
+|155   |    U1                     |DivClk_0                     |    71|
+|156   |  RAM                      |Ram256X16                    |     1|
+|157   |    BRAM_SINGLE_MACRO_inst |unimacro_BRAM_SINGLE_MACRO   |     1|
+|158   |  SClk                     |DivClk                       |    70|
 +------+---------------------------+-----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:01:10 . Memory (MB): peak = 1810.699 ; gain = 529.402 ; free physical = 211774 ; free virtual = 249141
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:01:22 . Memory (MB): peak = 1810.699 ; gain = 529.395 ; free physical = 43822 ; free virtual = 124583
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 34 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 1810.699 ; gain = 133.477 ; free physical = 211828 ; free virtual = 249195
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:01:11 . Memory (MB): peak = 1810.699 ; gain = 529.402 ; free physical = 211838 ; free virtual = 249204
+Synthesis finished with 0 errors, 0 critical warnings and 55 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:41 . Memory (MB): peak = 1810.699 ; gain = 133.477 ; free physical = 43877 ; free virtual = 124638
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:01:22 . Memory (MB): peak = 1810.699 ; gain = 529.395 ; free physical = 43887 ; free virtual = 124648
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 143 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 99 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 59 instances were transformed.
-  LD => LDCE: 59 instances
+  A total of 43 instances were transformed.
+  LD => LDCE: 43 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-191 Infos, 80 Warnings, 8 Critical Warnings and 0 Errors encountered.
+182 Infos, 93 Warnings, 9 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:01:12 . Memory (MB): peak = 1810.703 ; gain = 529.562 ; free physical = 211823 ; free virtual = 249189
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:01:24 . Memory (MB): peak = 1820.711 ; gain = 539.562 ; free physical = 43880 ; free virtual = 124641
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint '/zhome/5f/5/155462/MCU project/FINAL/FINAL.runs/synth_1/MCU_TOP.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file MCU_TOP_utilization_synth.rpt -pb MCU_TOP_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.60 . Memory (MB): peak = 1840.723 ; gain = 0.000 ; free physical = 211822 ; free virtual = 249189
-INFO: [Common 17-206] Exiting Vivado at Wed May  4 19:31:39 2022...
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.57 . Memory (MB): peak = 1850.730 ; gain = 0.000 ; free physical = 43877 ; free virtual = 124638
+INFO: [Common 17-206] Exiting Vivado at Sat May 14 14:06:16 2022...

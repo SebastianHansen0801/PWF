@@ -11,21 +11,21 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="910000001fs"></ZoomEndTime>
-      <Cursor1Time time="910000000fs"></Cursor1Time>
+      <ZoomEndTime time="5320000001fs"></ZoomEndTime>
+      <Cursor1Time time="5320000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="175"></NameColumnWidth>
-      <ValueColumnWidth column_width="128"></ValueColumnWidth>
+      <NameColumnWidth column_width="209"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="18" />
+   <WVObjectSize size="23" />
    <wvobject type="logic" fp_name="/MCU_TOP_tb/CLK">
       <obj_property name="ElementShortName">CLK</obj_property>
       <obj_property name="ObjectShortName">CLK</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/MCU_TOP_tb/uut/slow_clk">
-      <obj_property name="ElementShortName">slow_clk</obj_property>
-      <obj_property name="ObjectShortName">slow_clk</obj_property>
+   <wvobject type="array" fp_name="/MCU_TOP_tb/uut/DP/RF/U1/R0">
+      <obj_property name="ElementShortName">R0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">R0[7:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/MCU_TOP_tb/uut/DP/RF/U1/R1">
       <obj_property name="ElementShortName">R1[7:0]</obj_property>
@@ -35,13 +35,33 @@
       <obj_property name="ElementShortName">R2[7:0]</obj_property>
       <obj_property name="ObjectShortName">R2[7:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/MCU_TOP_tb/uut/DP/RF/U1/R3">
-      <obj_property name="ElementShortName">R3[7:0]</obj_property>
-      <obj_property name="ObjectShortName">R3[7:0]</obj_property>
+   <wvobject type="array" fp_name="/MCU_TOP_tb/uut/DP/RF/U1/R4">
+      <obj_property name="ElementShortName">R4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">R4[7:0]</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/MCU_TOP_tb/uut/RAM/Data_outM">
-      <obj_property name="ElementShortName">Data_outM[15:0]</obj_property>
-      <obj_property name="ObjectShortName">Data_outM[15:0]</obj_property>
+   <wvobject type="array" fp_name="/MCU_TOP_tb/uut/DP/RF/U1/R5">
+      <obj_property name="ElementShortName">R5[7:0]</obj_property>
+      <obj_property name="ObjectShortName">R5[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/MCU_TOP_tb/uut/DP/RF/U1/R6">
+      <obj_property name="ElementShortName">R6[7:0]</obj_property>
+      <obj_property name="ObjectShortName">R6[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/MCU_TOP_tb/uut/DP/RF/U1/R7">
+      <obj_property name="ElementShortName">R7[7:0]</obj_property>
+      <obj_property name="ObjectShortName">R7[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/MCU_TOP_tb/uut/PRM/MR2">
+      <obj_property name="ElementShortName">MR2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">MR2[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/MCU_TOP_tb/uut/PRM/MR6">
+      <obj_property name="ElementShortName">MR6[7:0]</obj_property>
+      <obj_property name="ObjectShortName">MR6[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/MCU_TOP_tb/uut/PRM/MR7">
+      <obj_property name="ElementShortName">MR7[7:0]</obj_property>
+      <obj_property name="ObjectShortName">MR7[7:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/MCU_TOP_tb/LED">
       <obj_property name="ElementShortName">LED[7:0]</obj_property>

@@ -33,7 +33,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity MicroprogramController is
     Port ( RESET : in STD_LOGIC;
-           CLK : in STD_LOGIC;
+           CLK,fclk : in STD_LOGIC;
            Address_In : in STD_LOGIC_VECTOR (7 downto 0);
            Address_Out : out STD_LOGIC_VECTOR (7 downto 0);
            Instruction_In : in STD_LOGIC_VECTOR (15 downto 0);
@@ -91,7 +91,7 @@ architecture Behavioral of MicroprogramController is
 begin
 
     U0: ProgramCounter port map (RESET => RESET, CLK => CLK, Address_In => Address_In, PC => Address_Out, PS => PS_int, Offset => Offset_int);
-    U1: InstructionRegister port map (RESET => RESET, CLK => CLK, IL => IL_int, Instruction_In => Instruction_In, IR => IR_int);
+    U1: InstructionRegister port map (RESET => RESET, CLK => fCLK, IL => IL_int, Instruction_In => Instruction_In, IR => IR_int);
     U2: InstructionDecoderController port map(RESET => RESET, CLK => CLK, V => V, C => C, N => N, Z => Z, IR => IR_int, PS => PS_int, IL => IL_int,
                                               DX => DX, AX => AX, BX => BX, MB => MB, FS => FS, MD => MD, RW => RW, MM => MM, MW => MW);
     U4: SignExtender port map (IR => IR_int, Extended_8 => Offset_int);
